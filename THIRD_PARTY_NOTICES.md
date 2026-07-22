@@ -38,3 +38,8 @@ Material referenced by those manifests includes FineWeb and Common Crawl terms, 
 ## Names and marks
 
 Company, model, and product names identify the compared tokenizer sources. They remain the property of their respective owners. Tokenizer Lab is not endorsed by those organizations.
+
+The monochrome lab SVGs in `public/lab-marks/` are derived from
+[`@lobehub/icons-static-svg` 1.94.0](https://github.com/lobehub/lobe-icons),
+which is distributed under the MIT License. The license covers the icon package;
+the depicted names and marks remain subject to their respective owners’ rights.

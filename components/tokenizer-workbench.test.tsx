@@ -33,7 +33,10 @@ describe("TokenizerWorkbench", () => {
     render(<TokenizerWorkbench />)
     expect(screen.getByRole("heading", { level: 3, name: "Connor’s Tokenizer" })).toBeVisible()
     const openAiHeading = screen.getByRole("heading", { name: "OpenAI" })
-    expect(openAiHeading.closest(".lab-title")?.querySelector(".lab-mark")?.textContent).toBe("OA")
+    const openAiMark = openAiHeading.closest(".lab-title")?.querySelector(".lab-mark")
+    expect(openAiMark?.querySelector('img[src="/lab-marks/openai.svg"]')).toBeTruthy()
+    expect(document.querySelectorAll(".lab-mark img")).toHaveLength(9)
+    expect(document.querySelector('[data-lab="atlas"]')).toHaveTextContent("CL")
     expect(screen.getByRole("link", { name: "Source code" })).toHaveAttribute(
       "href",
       "https://github.com/connorlove/tokenizer",
