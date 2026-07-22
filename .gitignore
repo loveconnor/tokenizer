@@ -12,6 +12,7 @@
 
 # testing
 /coverage
+/test-results
 
 # next.js
 /.next/
@@ -19,6 +20,18 @@
 
 # production
 /build
+
+# downloaded tokenizer training data and intermediate models
+/data/tokenizer-corpus/
+/data/tokenizer-build/
+/data/tokenizer-benchmark/
+
+# third-party tokenizer artifacts (recreate with `npm run tokenizers:sync`)
+/public/tokenizers/*
+!/public/tokenizers/README.md
+!/public/tokenizers/atlas-unigram-v1/
+!/public/tokenizers/atlas-unigram-v2/
+!/public/tokenizers/atlas-unigram-v3/
 
 # misc
 .DS_Store
@@ -32,6 +45,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +53,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.agents/

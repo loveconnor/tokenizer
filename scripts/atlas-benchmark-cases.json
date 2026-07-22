@@ -1,0 +1,112 @@
+[
+  {
+    "name": "prose-tokenizer",
+    "category": "prose",
+    "text": "A tokenizer turns language into countable pieces—but the seams appear in different places for every model family."
+  },
+  {
+    "name": "prose-commute",
+    "category": "prose",
+    "text": "The morning train arrived without ceremony, carrying commuters who had already begun answering messages and planning the day ahead."
+  },
+  {
+    "name": "prose-evidence",
+    "category": "prose",
+    "text": "Scientific claims become useful when the evidence, uncertainty, comparison, and method are visible to the reader."
+  },
+  {
+    "name": "prose-product",
+    "category": "prose",
+    "text": "Customers should be able to understand what changed, recover their work, and continue without memorizing hidden system state."
+  },
+  {
+    "name": "prose-narrative",
+    "category": "prose",
+    "text": "Rain settled over the harbor while the last fishing boats returned, their deck lights moving slowly through the gray afternoon."
+  },
+  {
+    "name": "emoji-family-url",
+    "category": "emoji_url",
+    "text": "Family 👩🏽‍🚀 + flags 🇺🇳 → https://example.com/search?q=tokenizer+lab&lang=en#specimen"
+  },
+  {
+    "name": "emoji-status-url",
+    "category": "emoji_url",
+    "text": "Build passed ✅🚀 See https://status.example.org/incidents?id=42&lang=en"
+  },
+  {
+    "name": "emoji-calendar-url",
+    "category": "emoji_url",
+    "text": "Meeting moved 📅⏰ https://calendar.example.net/events/weekly?view=agenda"
+  },
+  {
+    "name": "emoji-rgi-sequences",
+    "category": "emoji_url",
+    "text": "👨‍👩‍👧‍👦 👩🏽‍🚀 🏳️‍🌈 🇺🇳 ❤️‍🔥 🧑🏿‍💻"
+  },
+  {
+    "name": "url-docs",
+    "category": "url",
+    "text": "https://docs.example.co.uk/api/v2/users/123?include=profile%2Cteams&utm_source=email#permissions"
+  },
+  {
+    "name": "url-github",
+    "category": "url",
+    "text": "https://github.com/example/project/blob/main/src/tokenizer.ts?plain=1#L120-L180"
+  },
+  {
+    "name": "url-local-api",
+    "category": "url",
+    "text": "http://localhost:3000/api/v1/items?page=2&limit=50&sort=created_at"
+  },
+  {
+    "name": "url-encoded",
+    "category": "url",
+    "text": "https://search.example.com/?q=caf%C3%A9%20tokens&hl=fr&safe=active"
+  },
+  {
+    "name": "code-javascript",
+    "category": "code",
+    "text": "const specimen = {\n  lab: \"Tokenizer Lab\",\n  ready: true,\n  values: [13, 21, 34]\n};"
+  },
+  {
+    "name": "code-python",
+    "category": "code",
+    "text": "def normalize_records(rows):\n    return [row.strip().lower() for row in rows if row]\n"
+  },
+  {
+    "name": "code-sql",
+    "category": "code",
+    "text": "SELECT account_id, COUNT(*) AS events FROM audit_log WHERE created_at >= $1 GROUP BY account_id;"
+  },
+  {
+    "name": "multilingual-mixed",
+    "category": "multilingual",
+    "text": "Tokenization across languages: 你好世界 · مرحباً بالعالم · नमस्ते दुनिया · こんにちは世界"
+  },
+  {
+    "name": "multilingual-europe",
+    "category": "multilingual",
+    "text": "Bonjour le monde · Γειά σου κόσμε · Привіт, світе · Merhaba dünya"
+  },
+  {
+    "name": "multilingual-asia",
+    "category": "multilingual",
+    "text": "বাংলা ভাষা · தமிழ் மொழி · 한국어 문장 · ภาษาไทย"
+  },
+  {
+    "name": "boundary-normalization",
+    "category": "boundary",
+    "text": "é é ﬁ ＡＢＣ café\n"
+  },
+  {
+    "name": "boundary-whitespace",
+    "category": "boundary",
+    "text": "alpha          beta\n\n\t\tgamma        delta"
+  },
+  {
+    "name": "boundary-numbers",
+    "category": "boundary",
+    "text": "00000001 12345678901234567890 -3.141592653589793 2026-07-22T04:00:00Z"
+  }
+]

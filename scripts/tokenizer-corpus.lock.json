@@ -1,0 +1,652 @@
+{
+  "schema_version": 1,
+  "corpus_directory": "data/tokenizer-corpus",
+  "source_manifest": "scripts/tokenizer-corpus-sources.json",
+  "source_manifest_sha256": "c5af68d2f27001734cbf6760a64092e723da6676d5b6be6aba1cc99663e701d2",
+  "privacy": {
+    "stored_fields": [
+      "text",
+      "source_document_sha256",
+      "upstream_license_for_code"
+    ],
+    "excluded_metadata": [
+      "url",
+      "repository_name",
+      "path",
+      "author"
+    ],
+    "code_secret_filter_patterns": 4
+  },
+  "jobs": [
+    {
+      "id": "fineweb-en",
+      "group": "eng_Latn",
+      "dataset": "HuggingFaceFW/fineweb",
+      "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+      "path": "data/CC-MAIN-2024-10/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365
+      ],
+      "documents": 6867,
+      "utf8_bytes": 24001557
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "spa_Latn",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/spa_Latn/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        1704,
+        1705
+      ],
+      "documents": 1238,
+      "utf8_bytes": 4001222
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "fra_Latn",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/fra_Latn/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        1423,
+        1424
+      ],
+      "documents": 1372,
+      "utf8_bytes": 4001207
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "deu_Latn",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/deu_Latn/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        2583,
+        2584
+      ],
+      "documents": 1765,
+      "utf8_bytes": 4000389
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "por_Latn",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/por_Latn/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        116,
+        117
+      ],
+      "documents": 1247,
+      "utf8_bytes": 4002545
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "tur_Latn",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/tur_Latn/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        2266,
+        2267
+      ],
+      "documents": 1551,
+      "utf8_bytes": 4000656
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "vie_Latn",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/vie_Latn/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        307
+      ],
+      "documents": 779,
+      "utf8_bytes": 4028828
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "ind_Latn",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/ind_Latn/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        600,
+        601
+      ],
+      "documents": 1149,
+      "utf8_bytes": 4001972
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "swh_Latn",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/swh_Latn/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        1044,
+        1045
+      ],
+      "documents": 1386,
+      "utf8_bytes": 4003793
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "yor_Latn",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/yor_Latn/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        64,
+        65
+      ],
+      "documents": 1050,
+      "utf8_bytes": 4033596
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "rus_Cyrl",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/rus_Cyrl/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        284
+      ],
+      "documents": 560,
+      "utf8_bytes": 4005917
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "ukr_Cyrl",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/ukr_Cyrl/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        2018
+      ],
+      "documents": 784,
+      "utf8_bytes": 4001943
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "arb_Arab",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/arb_Arab/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        1060
+      ],
+      "documents": 967,
+      "utf8_bytes": 4008296
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "fas_Arab",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/fas_Arab/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        1255
+      ],
+      "documents": 746,
+      "utf8_bytes": 4006863
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "hin_Deva",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/hin_Deva/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        1072
+      ],
+      "documents": 601,
+      "utf8_bytes": 4004409
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "ben_Beng",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/ben_Beng/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        1761
+      ],
+      "documents": 636,
+      "utf8_bytes": 4009814
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "tam_Taml",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/tam_Taml/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        125
+      ],
+      "documents": 476,
+      "utf8_bytes": 4005456
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "tel_Telu",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/tel_Telu/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        1829
+      ],
+      "documents": 549,
+      "utf8_bytes": 4008148
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "cmn_Hani",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/cmn_Hani/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        1387
+      ],
+      "documents": 939,
+      "utf8_bytes": 4009540
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "jpn_Jpan",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/jpn_Jpan/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        1927,
+        1928
+      ],
+      "documents": 1072,
+      "utf8_bytes": 4008083
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "kor_Hang",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/kor_Hang/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        2376,
+        2377
+      ],
+      "documents": 1128,
+      "utf8_bytes": 4002241
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "tha_Thai",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/tha_Thai/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        401
+      ],
+      "documents": 549,
+      "utf8_bytes": 4011028
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "heb_Hebr",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/heb_Hebr/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        571
+      ],
+      "documents": 797,
+      "utf8_bytes": 4017555
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "ell_Grek",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/ell_Grek/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        1871
+      ],
+      "documents": 787,
+      "utf8_bytes": 4006734
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "group": "hye_Armn",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "path": "data/hye_Armn/train/000_00000.parquet",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "row_groups": [
+        1442,
+        1443
+      ],
+      "documents": 1024,
+      "utf8_bytes": 4004479
+    },
+    {
+      "id": "github-code-clean-00013",
+      "group": "code",
+      "dataset": "codeparrot/github-code-clean",
+      "revision": "c48d40f9e70f0196f8236901ee35807f7d6c44c0",
+      "path": "data/train-00013-of-00880.parquet",
+      "license": "Dataset metadata: Apache-2.0; included rows are additionally restricted by their upstream license field",
+      "row_groups": [
+        3
+      ],
+      "documents": 471,
+      "utf8_bytes": 3009298
+    },
+    {
+      "id": "github-code-clean-00089",
+      "group": "code",
+      "dataset": "codeparrot/github-code-clean",
+      "revision": "c48d40f9e70f0196f8236901ee35807f7d6c44c0",
+      "path": "data/train-00089-of-00880.parquet",
+      "license": "Dataset metadata: Apache-2.0; included rows are additionally restricted by their upstream license field",
+      "row_groups": [
+        3
+      ],
+      "documents": 526,
+      "utf8_bytes": 3000365
+    },
+    {
+      "id": "github-code-clean-00144",
+      "group": "code",
+      "dataset": "codeparrot/github-code-clean",
+      "revision": "c48d40f9e70f0196f8236901ee35807f7d6c44c0",
+      "path": "data/train-00144-of-00880.parquet",
+      "license": "Dataset metadata: Apache-2.0; included rows are additionally restricted by their upstream license field",
+      "row_groups": [
+        3
+      ],
+      "documents": 495,
+      "utf8_bytes": 3005147
+    },
+    {
+      "id": "github-code-clean-00233",
+      "group": "code",
+      "dataset": "codeparrot/github-code-clean",
+      "revision": "c48d40f9e70f0196f8236901ee35807f7d6c44c0",
+      "path": "data/train-00233-of-00880.parquet",
+      "license": "Dataset metadata: Apache-2.0; included rows are additionally restricted by their upstream license field",
+      "row_groups": [
+        3
+      ],
+      "documents": 425,
+      "utf8_bytes": 3023931
+    },
+    {
+      "id": "github-code-clean-00377",
+      "group": "code",
+      "dataset": "codeparrot/github-code-clean",
+      "revision": "c48d40f9e70f0196f8236901ee35807f7d6c44c0",
+      "path": "data/train-00377-of-00880.parquet",
+      "license": "Dataset metadata: Apache-2.0; included rows are additionally restricted by their upstream license field",
+      "row_groups": [
+        3
+      ],
+      "documents": 456,
+      "utf8_bytes": 3000468
+    },
+    {
+      "id": "github-code-clean-00521",
+      "group": "code",
+      "dataset": "codeparrot/github-code-clean",
+      "revision": "c48d40f9e70f0196f8236901ee35807f7d6c44c0",
+      "path": "data/train-00521-of-00880.parquet",
+      "license": "Dataset metadata: Apache-2.0; included rows are additionally restricted by their upstream license field",
+      "row_groups": [
+        3
+      ],
+      "documents": 476,
+      "utf8_bytes": 3007043
+    },
+    {
+      "id": "github-code-clean-00676",
+      "group": "code",
+      "dataset": "codeparrot/github-code-clean",
+      "revision": "c48d40f9e70f0196f8236901ee35807f7d6c44c0",
+      "path": "data/train-00676-of-00880.parquet",
+      "license": "Dataset metadata: Apache-2.0; included rows are additionally restricted by their upstream license field",
+      "row_groups": [
+        3
+      ],
+      "documents": 435,
+      "utf8_bytes": 3014870
+    },
+    {
+      "id": "github-code-clean-00811",
+      "group": "code",
+      "dataset": "codeparrot/github-code-clean",
+      "revision": "c48d40f9e70f0196f8236901ee35807f7d6c44c0",
+      "path": "data/train-00811-of-00880.parquet",
+      "license": "Dataset metadata: Apache-2.0; included rows are additionally restricted by their upstream license field",
+      "row_groups": [
+        3
+      ],
+      "documents": 547,
+      "utf8_bytes": 3001341
+    }
+  ],
+  "groups": [
+    {
+      "group": "arb_Arab",
+      "path": "groups/arb_Arab.jsonl",
+      "documents": 967,
+      "utf8_bytes": 4008296,
+      "sha256": "78981ef19b060a17e30fdc4ec9bbfe0b3f7cf324b88161cd1397ee0331440726"
+    },
+    {
+      "group": "ben_Beng",
+      "path": "groups/ben_Beng.jsonl",
+      "documents": 636,
+      "utf8_bytes": 4009814,
+      "sha256": "80c85d82b01dba67d9abb789c7fcce94394d928837994f1834e9b5cf12cfa58f"
+    },
+    {
+      "group": "cmn_Hani",
+      "path": "groups/cmn_Hani.jsonl",
+      "documents": 939,
+      "utf8_bytes": 4009540,
+      "sha256": "88c2be72df09c9a0e9d4cccbefca74fe9374909553ee565cdcef99e898914c76"
+    },
+    {
+      "group": "code",
+      "path": "groups/code.jsonl",
+      "documents": 3831,
+      "utf8_bytes": 24062463,
+      "sha256": "934273ca60c4c24c68ef140d86906041db242aa326c9f2d321c237c42aca26ba"
+    },
+    {
+      "group": "deu_Latn",
+      "path": "groups/deu_Latn.jsonl",
+      "documents": 1765,
+      "utf8_bytes": 4000389,
+      "sha256": "3b2bc14a4605e4a6aff1dadda80b1b73fa5775c88a85a84103ad535dc690d214"
+    },
+    {
+      "group": "ell_Grek",
+      "path": "groups/ell_Grek.jsonl",
+      "documents": 787,
+      "utf8_bytes": 4006734,
+      "sha256": "4ff76120be42d5f96a77dfc1563e5997ae4733f40146a62feb3848fa5478d1cf"
+    },
+    {
+      "group": "eng_Latn",
+      "path": "groups/eng_Latn.jsonl",
+      "documents": 6867,
+      "utf8_bytes": 24001557,
+      "sha256": "620c603b3f92fc2e29b29a7183cc8003abb0260cf249fdafad4d02e04909f020"
+    },
+    {
+      "group": "fas_Arab",
+      "path": "groups/fas_Arab.jsonl",
+      "documents": 746,
+      "utf8_bytes": 4006863,
+      "sha256": "a54f5f6b6d82511cafb9370d9f37d9cae800dcf50d5a5ba397fac5bc2f1c88cc"
+    },
+    {
+      "group": "fra_Latn",
+      "path": "groups/fra_Latn.jsonl",
+      "documents": 1372,
+      "utf8_bytes": 4001207,
+      "sha256": "721727b47b9f91431578bfc038fb02a6acac75cdf1987e7d1ad69dcd5da97304"
+    },
+    {
+      "group": "heb_Hebr",
+      "path": "groups/heb_Hebr.jsonl",
+      "documents": 797,
+      "utf8_bytes": 4017555,
+      "sha256": "a411688aa4ebe20da95e153d7140ce3b2a2d7f9cc62da10abe2701ed3ffa83ce"
+    },
+    {
+      "group": "hin_Deva",
+      "path": "groups/hin_Deva.jsonl",
+      "documents": 601,
+      "utf8_bytes": 4004409,
+      "sha256": "a60b6ad6cbd0a1ef2c980bb926c925df4bda25f5ffe11a422381463831419e50"
+    },
+    {
+      "group": "hye_Armn",
+      "path": "groups/hye_Armn.jsonl",
+      "documents": 1024,
+      "utf8_bytes": 4004479,
+      "sha256": "d50de261f9077a39a77aba0016a101f8a78816e1b71ba5cd9cc8631bb459cb4b"
+    },
+    {
+      "group": "ind_Latn",
+      "path": "groups/ind_Latn.jsonl",
+      "documents": 1149,
+      "utf8_bytes": 4001972,
+      "sha256": "b0298393954f4428da09623feb781c42b52d660d7922994673c0797a23172fd3"
+    },
+    {
+      "group": "jpn_Jpan",
+      "path": "groups/jpn_Jpan.jsonl",
+      "documents": 1072,
+      "utf8_bytes": 4008083,
+      "sha256": "fa85aa05f340129b6975acabb4d28c5428229035a04d39b16a94e92613537d30"
+    },
+    {
+      "group": "kor_Hang",
+      "path": "groups/kor_Hang.jsonl",
+      "documents": 1128,
+      "utf8_bytes": 4002241,
+      "sha256": "9208ed29df4755482b51104af209bc0f2474c3589ae13b0942e924aa7d12b3de"
+    },
+    {
+      "group": "por_Latn",
+      "path": "groups/por_Latn.jsonl",
+      "documents": 1247,
+      "utf8_bytes": 4002545,
+      "sha256": "c1c0eaba93c2a2083d9725d91b2b0dbb758f70bf663fa19f51ceb73b052d9429"
+    },
+    {
+      "group": "rus_Cyrl",
+      "path": "groups/rus_Cyrl.jsonl",
+      "documents": 560,
+      "utf8_bytes": 4005917,
+      "sha256": "263b5671a6b94765689bba56559f409fda087221fa92b3c1379e4f122b425011"
+    },
+    {
+      "group": "spa_Latn",
+      "path": "groups/spa_Latn.jsonl",
+      "documents": 1238,
+      "utf8_bytes": 4001222,
+      "sha256": "1b218e537672f5a0377df799cee2e5cbba6af87815d69948d5b5a9f11371fe90"
+    },
+    {
+      "group": "swh_Latn",
+      "path": "groups/swh_Latn.jsonl",
+      "documents": 1386,
+      "utf8_bytes": 4003793,
+      "sha256": "54455cc85f950ad1bb2f62ff0ba191f793eb67fc777c707b141e64569944fe9a"
+    },
+    {
+      "group": "tam_Taml",
+      "path": "groups/tam_Taml.jsonl",
+      "documents": 476,
+      "utf8_bytes": 4005456,
+      "sha256": "5f8a3c0629f66489d1d9d161e78312736b5dad0ae66b5a236e82fd5588484f16"
+    },
+    {
+      "group": "tel_Telu",
+      "path": "groups/tel_Telu.jsonl",
+      "documents": 549,
+      "utf8_bytes": 4008148,
+      "sha256": "c4c9a8ae34959b1c308e8c44a5eb37db381742115e6ba085f197a06383f4cbef"
+    },
+    {
+      "group": "tha_Thai",
+      "path": "groups/tha_Thai.jsonl",
+      "documents": 549,
+      "utf8_bytes": 4011028,
+      "sha256": "e72a8b9fae4821a1c17e1d3917a2167d1214627402f3e5ef805294ee850ff2b9"
+    },
+    {
+      "group": "tur_Latn",
+      "path": "groups/tur_Latn.jsonl",
+      "documents": 1551,
+      "utf8_bytes": 4000656,
+      "sha256": "1c98fca7fc19211c42cbd1781739601b57b733762a708a255a9fc7a054154e61"
+    },
+    {
+      "group": "ukr_Cyrl",
+      "path": "groups/ukr_Cyrl.jsonl",
+      "documents": 784,
+      "utf8_bytes": 4001943,
+      "sha256": "28295d7f3adb0190879109bbf560859ea6663c0c0144218c6eb2fbb6c3bf4d1f"
+    },
+    {
+      "group": "vie_Latn",
+      "path": "groups/vie_Latn.jsonl",
+      "documents": 779,
+      "utf8_bytes": 4028828,
+      "sha256": "eb6d077f077fe265022d872d9406a7e2158226630c43c14a923acc4b54609c59"
+    },
+    {
+      "group": "yor_Latn",
+      "path": "groups/yor_Latn.jsonl",
+      "documents": 1050,
+      "utf8_bytes": 4033596,
+      "sha256": "9ae4ee9ad821967c5485f51d92124147353109ffe3c4d343bd57784db5bd0671"
+    }
+  ]
+}

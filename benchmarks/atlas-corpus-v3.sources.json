@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "protocolId": "atlas-corpus-v3",
+  "description": "Held-out source-domain corpus plus pinned TokenizerBench and TokLens-compatible Wikipedia evaluations.",
+  "tokenizerBench": {
+    "version": "0.2.0",
+    "wheelUrl": "https://files.pythonhosted.org/packages/b1/10/93dadea2068d92328aeb30d16f90b814b42c9def565a8a5ffce2761ef9c3/tokenizerbench-0.2.0-py3-none-any.whl",
+    "sha256": "c8cd848101d12fa3eb6823e188679dadd2283bc0456d919fd5a14ddb6c06a38b",
+    "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+    "license": "MIT"
+  },
+  "tokLens": {
+    "revision": "36200af42b11dc1d43e156a541f6bde3c2e23f16",
+    "sourceUrl": "https://github.com/guan404ming/toklens/tree/36200af42b11dc1d43e156a541f6bde3c2e23f16",
+    "paperUrl": "https://aclanthology.org/2026.acl-srw.18/",
+    "wikipediaSnapshot": "20231101",
+    "languages": ["en", "zh", "ja", "ar", "hi", "de", "tr", "ko", "th", "ru", "fr", "es", "pt", "vi", "id"],
+    "maxCharactersPerLanguage": 50000,
+    "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL"
+  },
+  "commonCrawl": {
+    "dataset": "HuggingFaceFW/fineweb",
+    "config": "CC-MAIN-2024-10",
+    "datasetRevision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+    "firstRowsUrl": "https://datasets-server.huggingface.co/first-rows?dataset=HuggingFaceFW%2Ffineweb&config=CC-MAIN-2024-10&split=train",
+    "sourceUrl": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/tree/9bb295ddab0e05d785b879661af7260fed5140fc",
+    "maxUtf8Bytes": 160000,
+    "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+    "heldOutNote": "Uses the first served rows; Atlas training used row groups 359-365 from the pinned shard and document hashes are checked for overlap."
+  },
+  "stackOverflow": {
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://stackoverflow.com/help/licensing",
+    "questions": [
+      {"id": 231767, "title": "What does the yield keyword do in Python?"},
+      {"id": 11227809, "title": "Why is processing a sorted array faster than an unsorted array?"},
+      {"id": 927358, "title": "How do I undo the most recent local commits in Git?"}
+    ]
+  },
+  "books": {
+    "license": "Project Gutenberg public-domain distribution terms",
+    "sourceUrl": "https://www.gutenberg.org/policy/permission.html",
+    "items": [
+      {"id": "pg1342", "title": "Pride and Prejudice", "url": "https://www.gutenberg.org/cache/epub/1342/pg1342.txt", "maxUtf8Bytes": 80000},
+      {"id": "pg2701", "title": "Moby-Dick; or, The Whale", "url": "https://www.gutenberg.org/cache/epub/2701/pg2701.txt", "maxUtf8Bytes": 80000},
+      {"id": "pg1661", "title": "The Adventures of Sherlock Holmes", "url": "https://www.gutenberg.org/cache/epub/1661/pg1661.txt", "maxUtf8Bytes": 80000}
+    ]
+  },
+  "news": {
+    "license": "CC BY 2.5",
+    "sourceUrl": "https://en.wikinews.org/wiki/Wikinews:Copyright",
+    "revisionIds": [5024647, 5024646, 5024637, 5024638, 5024643, 5024622, 5024624, 5025600, 5013889, 5024678]
+  },
+  "scientificPapers": {
+    "license": "Each selected full text is marked open access and CC BY by Europe PMC",
+    "sourceUrl": "https://europepmc.org/downloads/openaccess",
+    "pmcids": ["PMC4302049", "PMC8005924", "PMC4103590", "PMC2707599", "PMC8371605"],
+    "maxUtf8BytesPerPaper": 50000
+  },
+  "github": {
+    "sourceUrl": "https://docs.github.com/en/repositories/creating-and-managing-repositories/licensing-a-repository",
+    "files": [
+      {"id": "cpython-json-decoder", "track": "python", "repository": "python/cpython", "revision": "b0c945a27e708419c6845234ef633ce3f7c4c41e", "path": "Lib/json/decoder.py", "license": "PSF-2.0"},
+      {"id": "typescript-scanner", "track": "typescript", "repository": "microsoft/TypeScript", "revision": "637d5746b70257028fb95aad32ddec6b26ab0a14", "path": "src/compiler/scanner.ts", "license": "Apache-2.0"},
+      {"id": "rust-core-str", "track": "rust", "repository": "rust-lang/rust", "revision": "b9ee8d8bcb1e4c7905a183a37e6d984c4b9a8468", "path": "library/core/src/str/mod.rs", "license": "MIT OR Apache-2.0"},
+      {"id": "fmt-format-header", "track": "cpp", "repository": "fmtlib/fmt", "revision": "bcaa44d05579c75a83571821faee7acf6a9a0d55", "path": "include/fmt/format.h", "license": "MIT"},
+      {"id": "guava-immutable-list", "track": "java", "repository": "google/guava", "revision": "9917ba909a29d3771c3551d3c133cda94cee187a", "path": "guava/src/com/google/common/collect/ImmutableList.java", "license": "Apache-2.0"},
+      {"id": "typescript-package-json", "track": "json", "repository": "microsoft/TypeScript", "revision": "637d5746b70257028fb95aad32ddec6b26ab0a14", "path": "package.json", "license": "Apache-2.0"},
+      {"id": "typescript-readme", "track": "markdown", "repository": "microsoft/TypeScript", "revision": "637d5746b70257028fb95aad32ddec6b26ab0a14", "path": "README.md", "license": "Apache-2.0"},
+      {"id": "rust-readme", "track": "markdown", "repository": "rust-lang/rust", "revision": "b9ee8d8bcb1e4c7905a183a37e6d984c4b9a8468", "path": "README.md", "license": "MIT OR Apache-2.0"},
+      {"id": "fmt-readme", "track": "markdown", "repository": "fmtlib/fmt", "revision": "bcaa44d05579c75a83571821faee7acf6a9a0d55", "path": "README.md", "license": "MIT"},
+      {"id": "guava-readme", "track": "markdown", "repository": "google/guava", "revision": "9917ba909a29d3771c3551d3c133cda94cee187a", "path": "README.md", "license": "Apache-2.0"}
+    ]
+  }
+}

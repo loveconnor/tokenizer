@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "output_directory": "data/tokenizer-corpus",
+  "sources": [
+    {
+      "id": "fineweb-en",
+      "kind": "parquet_text",
+      "dataset": "HuggingFaceFW/fineweb",
+      "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "group": "eng_Latn",
+      "path": "data/CC-MAIN-2024-10/000_00000.parquet",
+      "text_column": "text",
+      "target_utf8_bytes": 24000000
+    },
+    {
+      "id": "fineweb2-multilingual",
+      "kind": "fineweb2_languages",
+      "dataset": "HuggingFaceFW/fineweb-2",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "license": "ODC-By-1.0; upstream Common Crawl terms also apply",
+      "path_template": "data/{group}/train/000_00000.parquet",
+      "text_column": "text",
+      "target_utf8_bytes_per_group": 4000000,
+      "groups": [
+        "spa_Latn",
+        "fra_Latn",
+        "deu_Latn",
+        "por_Latn",
+        "tur_Latn",
+        "vie_Latn",
+        "ind_Latn",
+        "swh_Latn",
+        "yor_Latn",
+        "rus_Cyrl",
+        "ukr_Cyrl",
+        "arb_Arab",
+        "fas_Arab",
+        "hin_Deva",
+        "ben_Beng",
+        "tam_Taml",
+        "tel_Telu",
+        "cmn_Hani",
+        "jpn_Jpan",
+        "kor_Hang",
+        "tha_Thai",
+        "heb_Hebr",
+        "ell_Grek",
+        "hye_Armn"
+      ]
+    },
+    {
+      "id": "github-code-clean",
+      "kind": "parquet_code_shards",
+      "dataset": "codeparrot/github-code-clean",
+      "revision": "c48d40f9e70f0196f8236901ee35807f7d6c44c0",
+      "license": "Dataset metadata: Apache-2.0; included rows are additionally restricted by their upstream license field",
+      "group": "code",
+      "path_template": "data/train-{shard:05d}-of-00880.parquet",
+      "shards": [13, 89, 144, 233, 377, 521, 676, 811],
+      "text_column": "code",
+      "license_column": "license",
+      "allowed_licenses": [
+        "apache-2.0",
+        "bsd-2-clause",
+        "bsd-3-clause",
+        "isc",
+        "mit"
+      ],
+      "target_utf8_bytes": 24000000
+    }
+  ]
+}

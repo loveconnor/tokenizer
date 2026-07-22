@@ -1,0 +1,2442 @@
+{
+  "schemaVersion": 1,
+  "protocolId": "atlas-corpus-v3",
+  "builtAt": "2026-07-22T05:56:15.117520+00:00",
+  "sourceManifest": "benchmarks/atlas-corpus-v3.sources.json",
+  "sourceManifestSha256": "f51a089c65bd62ddd252d9645061e384bbdc58d8bda3b6449a4a8eca682304c3",
+  "corpusSha256": "2dbf6ba9ce27a151446b91506cc9290d0540734bb17e5b1a6a21f667be7bae0f",
+  "corpusDirectory": "data/tokenizer-benchmark",
+  "tracks": [
+    {
+      "id": "wikipedia",
+      "label": "Wikipedia",
+      "path": "tracks/wikipedia.jsonl",
+      "records": 58,
+      "utf8Bytes": 1941079,
+      "jsonlSha256": "c7322e6ee75cb127220a72cc42667d947a891872e1197dbc7443f1389f7ddcb8",
+      "groups": {
+        "en": 2,
+        "zh": 5,
+        "ja": 3,
+        "ar": 2,
+        "hi": 5,
+        "de": 5,
+        "tr": 1,
+        "ko": 12,
+        "th": 4,
+        "ru": 2,
+        "fr": 5,
+        "es": 1,
+        "pt": 2,
+        "vi": 4,
+        "id": 5
+      },
+      "samples": [
+        {
+          "id": "wikipedia-en-12",
+          "title": "Anarchism",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Anarchism",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.en",
+          "utf8Bytes": 46082,
+          "sha256": "cee7181c84f502383be04e01db5c53acc80c78c905b4c359f0e3e5f6655aa909"
+        },
+        {
+          "id": "wikipedia-en-39",
+          "title": "Albedo",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Albedo",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.en",
+          "utf8Bytes": 25117,
+          "sha256": "cf2cb99bb0a10bfe91eb13df683a423e4b3ab5202cbd0e5aeabc6fbb36566580"
+        },
+        {
+          "id": "wikipedia-zh-13",
+          "title": "数学",
+          "sourceUrl": "https://zh.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.zh",
+          "utf8Bytes": 23359,
+          "sha256": "c56b89c7bd8893ee25cfca5c9785c4b80d9003e52091aaa2d30e8c6a6e78896c"
+        },
+        {
+          "id": "wikipedia-zh-18",
+          "title": "哲学",
+          "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%93%B2%E5%AD%A6",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.zh",
+          "utf8Bytes": 49652,
+          "sha256": "d4f89380b7180f731312e42287ffd4f165fc872b7d90624dd29bd0342e2e3a1f"
+        },
+        {
+          "id": "wikipedia-zh-21",
+          "title": "文學",
+          "sourceUrl": "https://zh.wikipedia.org/wiki/%E6%96%87%E5%AD%B8",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.zh",
+          "utf8Bytes": 14655,
+          "sha256": "ea248ffa8d21a07f1518770cacd99b5d2516197fb42465fe75b4a6756dc973de"
+        },
+        {
+          "id": "wikipedia-zh-22",
+          "title": "历史",
+          "sourceUrl": "https://zh.wikipedia.org/wiki/%E5%8E%86%E5%8F%B2",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.zh",
+          "utf8Bytes": 28765,
+          "sha256": "f660bbe14fde3b880fa60211faa0eb889b3aef91448863eae74d943f8e728ae4"
+        },
+        {
+          "id": "wikipedia-zh-25",
+          "title": "计算机科学",
+          "sourceUrl": "https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.zh",
+          "utf8Bytes": 23286,
+          "sha256": "caab7018a05e0dab4b573c7797adb92cc3fcd74cadb4f2afb454f7f66c6e9f95"
+        },
+        {
+          "id": "wikipedia-ja-5",
+          "title": "アンパサンド",
+          "sourceUrl": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%B3%E3%83%91%E3%82%B5%E3%83%B3%E3%83%89",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ja",
+          "utf8Bytes": 6566,
+          "sha256": "c845d068dfbdd05825bfe958c34bc685e5eae23f8bb890d617784f63f160a65b"
+        },
+        {
+          "id": "wikipedia-ja-10",
+          "title": "言語",
+          "sourceUrl": "https://ja.wikipedia.org/wiki/%E8%A8%80%E8%AA%9E",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ja",
+          "utf8Bytes": 30890,
+          "sha256": "2a1e897a0e9a6912074a21298957545ec36763fa34d98c70316f08f274b05969"
+        },
+        {
+          "id": "wikipedia-ja-11",
+          "title": "日本語",
+          "sourceUrl": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ja",
+          "utf8Bytes": 201419,
+          "sha256": "afe2d2ccedad24ceaed9ee9895ad73c33d781460d10c6f6e339251b108c3aa91"
+        },
+        {
+          "id": "wikipedia-ar-7",
+          "title": "ماء",
+          "sourceUrl": "https://ar.wikipedia.org/wiki/%D9%85%D8%A7%D8%A1",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ar",
+          "utf8Bytes": 88464,
+          "sha256": "46754a4c75627d069ea37ba7a1b445585e50e57ddbb41557d3d1aa265e4a9bd7"
+        },
+        {
+          "id": "wikipedia-ar-38",
+          "title": "رياضيات",
+          "sourceUrl": "https://ar.wikipedia.org/wiki/%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ar",
+          "utf8Bytes": 66733,
+          "sha256": "56f642c27907083a732d9d075588901e802720ae8e1ccc2089115b19f7747a6b"
+        },
+        {
+          "id": "wikipedia-hi-10",
+          "title": "हम होंगे कामयाब",
+          "sourceUrl": "https://hi.wikipedia.org/wiki/%E0%A4%B9%E0%A4%AE%20%E0%A4%B9%E0%A5%8B%E0%A4%82%E0%A4%97%E0%A5%87%20%E0%A4%95%E0%A4%BE%E0%A4%AE%E0%A4%AF%E0%A4%BE%E0%A4%AC",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.hi",
+          "utf8Bytes": 998,
+          "sha256": "51b149203aca46a32410ed0bca9fe03497e98299b8879c6fc99f058a66f9e139"
+        },
+        {
+          "id": "wikipedia-hi-14",
+          "title": "दैनिक पूजा",
+          "sourceUrl": "https://hi.wikipedia.org/wiki/%E0%A4%A6%E0%A5%88%E0%A4%A8%E0%A4%BF%E0%A4%95%20%E0%A4%AA%E0%A5%82%E0%A4%9C%E0%A4%BE",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.hi",
+          "utf8Bytes": 9497,
+          "sha256": "cf30ae34d7e57b3384d852f2bba3b5229860c04b290fb66ac73004b481f89da8"
+        },
+        {
+          "id": "wikipedia-hi-54",
+          "title": "हिन्दी",
+          "sourceUrl": "https://hi.wikipedia.org/wiki/%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.hi",
+          "utf8Bytes": 57161,
+          "sha256": "45220580b08a683ddc4097fe4eb106212dc4257297f60ae85b7891cabde81757"
+        },
+        {
+          "id": "wikipedia-hi-56",
+          "title": "फ़ारसी भाषा",
+          "sourceUrl": "https://hi.wikipedia.org/wiki/%E0%A4%AB%E0%A4%BC%E0%A4%BE%E0%A4%B0%E0%A4%B8%E0%A5%80%20%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.hi",
+          "utf8Bytes": 14203,
+          "sha256": "e558d2f9cc93e573f97d7dde45075949c05e5981e818eb232b0399242381f770"
+        },
+        {
+          "id": "wikipedia-hi-58",
+          "title": "देवनागरी",
+          "sourceUrl": "https://hi.wikipedia.org/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.hi",
+          "utf8Bytes": 69787,
+          "sha256": "dd3803675f634beaa80ca3e1efe87907b486cf763e4229db9f3df49cc918b6b1"
+        },
+        {
+          "id": "wikipedia-de-1",
+          "title": "Alan Smithee",
+          "sourceUrl": "https://de.wikipedia.org/wiki/Alan%20Smithee",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.de",
+          "utf8Bytes": 4987,
+          "sha256": "5a1cce94b23c47d9fe44e3469af42f9aa7b26aca7c8de41970cebf0d31bdb5e6"
+        },
+        {
+          "id": "wikipedia-de-3",
+          "title": "Actinium",
+          "sourceUrl": "https://de.wikipedia.org/wiki/Actinium",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.de",
+          "utf8Bytes": 5907,
+          "sha256": "2119cfd61e7a670e577c06c03da98f92f554fe01238bbff23469c1eac3522ff2"
+        },
+        {
+          "id": "wikipedia-de-5",
+          "title": "Ang Lee",
+          "sourceUrl": "https://de.wikipedia.org/wiki/Ang%20Lee",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.de",
+          "utf8Bytes": 14688,
+          "sha256": "3f29340a70efdc417dfc3c50072c0a3df9f477fadecab52115820a07e5086bb5"
+        },
+        {
+          "id": "wikipedia-de-7",
+          "title": "Anschluss (Luhmann)",
+          "sourceUrl": "https://de.wikipedia.org/wiki/Anschluss%20%28Luhmann%29",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.de",
+          "utf8Bytes": 3129,
+          "sha256": "9c49db2a0b5eb04b78f487a1652d255697ae395abe687cde18eda85759a79197"
+        },
+        {
+          "id": "wikipedia-de-10",
+          "title": "Aussagenlogik",
+          "sourceUrl": "https://de.wikipedia.org/wiki/Aussagenlogik",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.de",
+          "utf8Bytes": 53582,
+          "sha256": "955b81ec639030159fd165ce2593166efbb8a01c96869e16c8386d7614273e10"
+        },
+        {
+          "id": "wikipedia-tr-10",
+          "title": "Cengiz Han",
+          "sourceUrl": "https://tr.wikipedia.org/wiki/Cengiz%20Han",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.tr",
+          "utf8Bytes": 112940,
+          "sha256": "aa5fd46f77fe709292f37df56d20ebfc88fed4e8fd5135412e61887cd74cf652"
+        },
+        {
+          "id": "wikipedia-ko-5",
+          "title": "지미 카터",
+          "sourceUrl": "https://ko.wikipedia.org/wiki/%EC%A7%80%EB%AF%B8%20%EC%B9%B4%ED%84%B0",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ko",
+          "utf8Bytes": 8497,
+          "sha256": "7f65d0e3a9506c14be043564308907679b1b8540ed14b5e6b0013cdaaf5cada5"
+        },
+        {
+          "id": "wikipedia-ko-9",
+          "title": "수학",
+          "sourceUrl": "https://ko.wikipedia.org/wiki/%EC%88%98%ED%95%99",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ko",
+          "utf8Bytes": 11678,
+          "sha256": "4cdbb674011c9e6a3c04cae306c1611e5e3f7fb60843e78ec82163d5e26479e2"
+        },
+        {
+          "id": "wikipedia-ko-10",
+          "title": "수학 상수",
+          "sourceUrl": "https://ko.wikipedia.org/wiki/%EC%88%98%ED%95%99%20%EC%83%81%EC%88%98",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ko",
+          "utf8Bytes": 1868,
+          "sha256": "2a7b3d2b9dbde15929935633c912b83fc454cbaf19af3f8d80bb4415aab0bb21"
+        },
+        {
+          "id": "wikipedia-ko-19",
+          "title": "문학",
+          "sourceUrl": "https://ko.wikipedia.org/wiki/%EB%AC%B8%ED%95%99",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ko",
+          "utf8Bytes": 7737,
+          "sha256": "3a55448d8aec0dd2388bdde2c49dce36eae0c4dbba07e94754dd05bdd7123cdc"
+        },
+        {
+          "id": "wikipedia-ko-20",
+          "title": "나라 목록",
+          "sourceUrl": "https://ko.wikipedia.org/wiki/%EB%82%98%EB%9D%BC%20%EB%AA%A9%EB%A1%9D",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ko",
+          "utf8Bytes": 6378,
+          "sha256": "5ff8319333cd277b8b58938f1eaa3df5fb0a78003c92d7f6fe974e4d4be3bc52"
+        },
+        {
+          "id": "wikipedia-ko-21",
+          "title": "화학",
+          "sourceUrl": "https://ko.wikipedia.org/wiki/%ED%99%94%ED%95%99",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ko",
+          "utf8Bytes": 18908,
+          "sha256": "c4e5b369202f9a97b850a3e811bf315bf336f25ceb55c8a16cd438bb0a660d21"
+        },
+        {
+          "id": "wikipedia-ko-22",
+          "title": "체첸 공화국",
+          "sourceUrl": "https://ko.wikipedia.org/wiki/%EC%B2%B4%EC%B2%B8%20%EA%B3%B5%ED%99%94%EA%B5%AD",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ko",
+          "utf8Bytes": 8402,
+          "sha256": "6fab4302d309b12c7ee7414ddd54d1adef54ec9542c22cd6758387cc491d9df5"
+        },
+        {
+          "id": "wikipedia-ko-24",
+          "title": "맥스웰 방정식",
+          "sourceUrl": "https://ko.wikipedia.org/wiki/%EB%A7%A5%EC%8A%A4%EC%9B%B0%20%EB%B0%A9%EC%A0%95%EC%8B%9D",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ko",
+          "utf8Bytes": 16657,
+          "sha256": "200f23d07ecd94c9c2cb6efc70cf5002bcebbb0fc2e6f72b222f99514d232e30"
+        },
+        {
+          "id": "wikipedia-ko-26",
+          "title": "초월수",
+          "sourceUrl": "https://ko.wikipedia.org/wiki/%EC%B4%88%EC%9B%94%EC%88%98",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ko",
+          "utf8Bytes": 10960,
+          "sha256": "d0a62f789e1509e790eef090f45f2c5ae8aab81698f002dc34e01996ef55a219"
+        },
+        {
+          "id": "wikipedia-ko-31",
+          "title": "음계",
+          "sourceUrl": "https://ko.wikipedia.org/wiki/%EC%9D%8C%EA%B3%84",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ko",
+          "utf8Bytes": 2308,
+          "sha256": "7c35281f17289929c8ff9943986a45936ba682ea767e8d178c006a0a8dfaee87"
+        },
+        {
+          "id": "wikipedia-ko-34",
+          "title": "대한민국 제16대 대통령 선거",
+          "sourceUrl": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%EC%A0%9C16%EB%8C%80%20%EB%8C%80%ED%86%B5%EB%A0%B9%20%EC%84%A0%EA%B1%B0",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ko",
+          "utf8Bytes": 17367,
+          "sha256": "e751596bdb5f345256f6647002df820bad341706cfc9505e672bb2a7f4f742dd"
+        },
+        {
+          "id": "wikipedia-ko-36",
+          "title": "함석헌",
+          "sourceUrl": "https://ko.wikipedia.org/wiki/%ED%95%A8%EC%84%9D%ED%97%8C",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ko",
+          "utf8Bytes": 19951,
+          "sha256": "ce40abc6c18f25ddf08f53efa363016901b33fb2303678dff6722d0d4a4e05ad"
+        },
+        {
+          "id": "wikipedia-th-1",
+          "title": "หน้าหลัก",
+          "sourceUrl": "https://th.wikipedia.org/wiki/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.th",
+          "utf8Bytes": 1362,
+          "sha256": "3ab9c6aee5804715e6727652cd265fe3c9c3c8b7cc86752edae76e3888b2abf8"
+        },
+        {
+          "id": "wikipedia-th-545",
+          "title": "ดาราศาสตร์",
+          "sourceUrl": "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.th",
+          "utf8Bytes": 92381,
+          "sha256": "9bdac57d5e8fb5d5b3b8a37ed0b6b8f92b394ced1f939a0ff7a05eb4d5b75c81"
+        },
+        {
+          "id": "wikipedia-th-547",
+          "title": "ภูมิศาสตร์",
+          "sourceUrl": "https://th.wikipedia.org/wiki/%E0%B8%A0%E0%B8%B9%E0%B8%A1%E0%B8%B4%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.th",
+          "utf8Bytes": 30597,
+          "sha256": "a6eedf1fc82e0101c686f27e06686977c3f3866fe18bb922ba318bc8421cb2bb"
+        },
+        {
+          "id": "wikipedia-th-611",
+          "title": "พันทิป.คอม",
+          "sourceUrl": "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B4%E0%B8%9B.%E0%B8%84%E0%B8%AD%E0%B8%A1",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.th",
+          "utf8Bytes": 22103,
+          "sha256": "a16a1034b26a8454f9ba04d671a2a7b3e9e682ed9f3f5f288e6afcbf3d88fc40"
+        },
+        {
+          "id": "wikipedia-ru-7",
+          "title": "Литва",
+          "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%82%D0%B2%D0%B0",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ru",
+          "utf8Bytes": 77648,
+          "sha256": "19e04acc9727b2ad01a63cbe6649a2d79652b5ee879e63c00bb7cb86b6ae030d"
+        },
+        {
+          "id": "wikipedia-ru-9",
+          "title": "Россия",
+          "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.ru",
+          "utf8Bytes": 283374,
+          "sha256": "80fda230e752f135c647ef500b1adc8e1f614572ef86da9f99b900449f716de9"
+        },
+        {
+          "id": "wikipedia-fr-3",
+          "title": "Antoine Meillet",
+          "sourceUrl": "https://fr.wikipedia.org/wiki/Antoine%20Meillet",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.fr",
+          "utf8Bytes": 7118,
+          "sha256": "465f6109f9a6c6851e1608538b6ad2f3dd7071d3839d0f2bf9d6ac6911addfb1"
+        },
+        {
+          "id": "wikipedia-fr-7",
+          "title": "Algèbre linéaire",
+          "sourceUrl": "https://fr.wikipedia.org/wiki/Alg%C3%A8bre%20lin%C3%A9aire",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.fr",
+          "utf8Bytes": 12438,
+          "sha256": "7ecaedd538306ad4dc01bca5589612b43f4d5d36796ccb12f85dd26aaebf3fc7"
+        },
+        {
+          "id": "wikipedia-fr-9",
+          "title": "Algèbre générale",
+          "sourceUrl": "https://fr.wikipedia.org/wiki/Alg%C3%A8bre%20g%C3%A9n%C3%A9rale",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.fr",
+          "utf8Bytes": 3090,
+          "sha256": "75665cbbd3d642bc0dddb5af30e8e752c2093d73d6dded195955e2020d283cdb"
+        },
+        {
+          "id": "wikipedia-fr-10",
+          "title": "Algorithmique",
+          "sourceUrl": "https://fr.wikipedia.org/wiki/Algorithmique",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.fr",
+          "utf8Bytes": 20751,
+          "sha256": "f691e9c8b0dff31a42e2e715f2d272d66c413186b5ef6804f04ecee31e4cd816"
+        },
+        {
+          "id": "wikipedia-fr-11",
+          "title": "Politique en Argentine",
+          "sourceUrl": "https://fr.wikipedia.org/wiki/Politique%20en%20Argentine",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.fr",
+          "utf8Bytes": 9651,
+          "sha256": "363846edb8da18f91b832110ca00ea67d3c24ec08bd8d738e001dcc3ec15843e"
+        },
+        {
+          "id": "wikipedia-es-7",
+          "title": "Andorra",
+          "sourceUrl": "https://es.wikipedia.org/wiki/Andorra",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.es",
+          "utf8Bytes": 58701,
+          "sha256": "d6786390cdca4102ce074730ebd69a940ce4024d4c6c39061023cce6d98ab39e"
+        },
+        {
+          "id": "wikipedia-pt-220",
+          "title": "Astronomia",
+          "sourceUrl": "https://pt.wikipedia.org/wiki/Astronomia",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.pt",
+          "utf8Bytes": 22267,
+          "sha256": "cd8affe77e1f898abb6549402b3b19569f0ae58bbcd564796f06c0dad378bf1b"
+        },
+        {
+          "id": "wikipedia-pt-223",
+          "title": "América Latina",
+          "sourceUrl": "https://pt.wikipedia.org/wiki/Am%C3%A9rica%20Latina",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.pt",
+          "utf8Bytes": 73155,
+          "sha256": "769d63a328354d96cfa3662ec0d5a568d3b84b9373a03727bf647769ee8d693e"
+        },
+        {
+          "id": "wikipedia-vi-4",
+          "title": "Internet Society",
+          "sourceUrl": "https://vi.wikipedia.org/wiki/Internet%20Society",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.vi",
+          "utf8Bytes": 1517,
+          "sha256": "70fdd89819bdf770006236a7222974fe2f15360b51fb2b912d2c925a736fae17"
+        },
+        {
+          "id": "wikipedia-vi-13",
+          "title": "Tiếng Việt",
+          "sourceUrl": "https://vi.wikipedia.org/wiki/Ti%E1%BA%BFng%20Vi%E1%BB%87t",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.vi",
+          "utf8Bytes": 37994,
+          "sha256": "d5fbb89efc495c906c0d776706b5a356832be60869dde9abc4e05021c2702a04"
+        },
+        {
+          "id": "wikipedia-vi-24",
+          "title": "Ohio",
+          "sourceUrl": "https://vi.wikipedia.org/wiki/Ohio",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.vi",
+          "utf8Bytes": 7851,
+          "sha256": "2bb55a028a606a6148f5e387a2ae48e88f09a3ef76b8ac7ebb2dc2e5f8fa8721"
+        },
+        {
+          "id": "wikipedia-vi-26",
+          "title": "California",
+          "sourceUrl": "https://vi.wikipedia.org/wiki/California",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.vi",
+          "utf8Bytes": 28656,
+          "sha256": "ca60235e6ee1bf3ed64e8451002a8f92b9f47967d05ad6425a68d6f8f5132349"
+        },
+        {
+          "id": "wikipedia-id-1",
+          "title": "Asam deoksiribonukleat",
+          "sourceUrl": "https://id.wikipedia.org/wiki/Asam%20deoksiribonukleat",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.id",
+          "utf8Bytes": 22819,
+          "sha256": "86e580990bffc0461d0d6ac11c2db87183580572d89e38d9ac0c3e7297e3ab4d"
+        },
+        {
+          "id": "wikipedia-id-3",
+          "title": "Anwar Sadat",
+          "sourceUrl": "https://id.wikipedia.org/wiki/Anwar%20Sadat",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.id",
+          "utf8Bytes": 6315,
+          "sha256": "9af3db638873298718c3c4d5fbeb80c7f099896709c3de9fd1fa273e4ca429cf"
+        },
+        {
+          "id": "wikipedia-id-4",
+          "title": "Azhar Mansor",
+          "sourceUrl": "https://id.wikipedia.org/wiki/Azhar%20Mansor",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.id",
+          "utf8Bytes": 1198,
+          "sha256": "64a78dd1d1791f41d4af065d72ce6b50b982ae4637b94d0690a5ad0298312c01"
+        },
+        {
+          "id": "wikipedia-id-5",
+          "title": "Arkeologi",
+          "sourceUrl": "https://id.wikipedia.org/wiki/Arkeologi",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.id",
+          "utf8Bytes": 14248,
+          "sha256": "332379afa0591ab204edf2bdf2429780ef58fdce91d2e82f9161d9a8f4466c78"
+        },
+        {
+          "id": "wikipedia-id-6",
+          "title": "Antropologi",
+          "sourceUrl": "https://id.wikipedia.org/wiki/Antropologi",
+          "license": "MIT code; Wikipedia text CC BY-SA 4.0 and GFDL",
+          "revision": "20231101.id",
+          "utf8Bytes": 23267,
+          "sha256": "106e76d3cda53f5dbd2b3bf1dd7bb54609e84e17f271f069d2d0394165e27bf8"
+        }
+      ]
+    },
+    {
+      "id": "common-crawl",
+      "label": "Common Crawl",
+      "path": "tracks/common-crawl.jsonl",
+      "records": 47,
+      "utf8Bytes": 160000,
+      "jsonlSha256": "12d6c654e0d91e0bda23eee2ebc71bc2d05435115d99982e2ea27e91f9404569",
+      "groups": {},
+      "samples": [
+        {
+          "id": "fineweb-<urn:uuid:8cd4575d-befe-45c5-9dea-9d76a6b1a93c>",
+          "title": "FineWeb document 1",
+          "sourceUrl": "http://199cr.com/archives/25628",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 4782,
+          "sha256": "7fc4ab10e967c4c558bd95f3424c0249c3fd1382cddd6c19caf37fccf4f6aa6b"
+        },
+        {
+          "id": "fineweb-<urn:uuid:4dd21ed3-d616-4748-8c7b-b111db5ec1f5>",
+          "title": "FineWeb document 2",
+          "sourceUrl": "http://20literlife.com/manila-philippines/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 2609,
+          "sha256": "4c790b1a4cdadb8f73c04621cdd0d6345a034040d2c548d539690b89dbdfc262"
+        },
+        {
+          "id": "fineweb-<urn:uuid:f66f9cbd-dff6-4625-aae8-28402b8c176f>",
+          "title": "FineWeb document 3",
+          "sourceUrl": "http://4.gailroddy.com/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 692,
+          "sha256": "f6f9ed378924d80c14b9d578e5c7533e7f5740f36f9e0df66080da38d76259ad"
+        },
+        {
+          "id": "fineweb-<urn:uuid:34357d20-1edd-433a-b334-408893e6eb81>",
+          "title": "FineWeb document 4",
+          "sourceUrl": "http://5bricksstudio.com/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 758,
+          "sha256": "27f99206f3e9d592c814f4ae12a4129a279afa2f03ae47098441466315b93c87"
+        },
+        {
+          "id": "fineweb-<urn:uuid:74c46249-3a4e-43ec-9be4-579b7ef7ded8>",
+          "title": "FineWeb document 5",
+          "sourceUrl": "http://8bithorse.blogspot.com/2021/12/below-ocean.html",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 8483,
+          "sha256": "e68859c41b7b90eb9cc519ec58e658e7ab9573a12a2794ebe919e80888ae9694"
+        },
+        {
+          "id": "fineweb-<urn:uuid:953c35be-238c-4fe1-8b10-1ad83d29c25c>",
+          "title": "FineWeb document 6",
+          "sourceUrl": "http://ando-travel.com.ua/benefits-of-talk-to-strangers-via-random-stranger-3/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 6128,
+          "sha256": "4daf123069f595c6065327ec5cfd7297fdd03f493e6eb61783f95abe3e33386f"
+        },
+        {
+          "id": "fineweb-<urn:uuid:c18a95e5-c4c6-416c-95b7-28ee1fc8d15c>",
+          "title": "FineWeb document 7",
+          "sourceUrl": "http://ando-travel.com.ua/gay-hookup-sites-ng-local-hookups-easy-by-laying/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 6762,
+          "sha256": "1b8a4de1de53470e34c856855941ca83dc912b2f8e541fd38e1be65ae658ae63"
+        },
+        {
+          "id": "fineweb-<urn:uuid:5666805a-f5f6-41e0-ad92-2984818b6f1c>",
+          "title": "FineWeb document 8",
+          "sourceUrl": "http://apocalypseblogger.apocalypseradio.com/2023/06/apocalypse-radio-seven-hundred-and.html",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 647,
+          "sha256": "3e495449a6eb75ed011a53d006d42e002ea2e2b24fbfc238ad519d7b4f3d9c74"
+        },
+        {
+          "id": "fineweb-<urn:uuid:bd8cceee-3e29-4d09-856f-b6448acb9b9c>",
+          "title": "FineWeb document 9",
+          "sourceUrl": "http://app.betterwalker.com/getting-a-good-woman-to-get-married-to/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 3035,
+          "sha256": "cb39e5d7bac77e22023ed4146fc18cc7b1f7fd8b0dde3400a5130db1112862ff"
+        },
+        {
+          "id": "fineweb-<urn:uuid:b4079e96-fa2c-40ee-9df5-ad029698f3ea>",
+          "title": "FineWeb document 10",
+          "sourceUrl": "http://badiabeaute.com/2015/08/20/getting-additional-health-and-legal-help-during-va-appeals/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 2997,
+          "sha256": "506daf5c09f9af59d2bcc5de6815ac804482b1ee03dd3b6475d8b2b057b149a2"
+        },
+        {
+          "id": "fineweb-<urn:uuid:312b91be-0dfc-439d-9cf5-7d8e3b23e5e5>",
+          "title": "FineWeb document 11",
+          "sourceUrl": "http://ball.hencomtrai.com/archives/274.html",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 2701,
+          "sha256": "3833789f0cc7c6f02083252b647e52c2fb6e945178b8be353e8b4f750a163cdf"
+        },
+        {
+          "id": "fineweb-<urn:uuid:9bc0de18-3369-4f9b-a8b2-4153e1be37e3>",
+          "title": "FineWeb document 12",
+          "sourceUrl": "http://balthaliresort.com/cul.html",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 1175,
+          "sha256": "631dfad1cea8cb193c035d91b0be1d7e6232c58b66be0ce0a5d35d9f23deb751"
+        },
+        {
+          "id": "fineweb-<urn:uuid:01d3770b-8345-4913-b070-f120e9e062cb>",
+          "title": "FineWeb document 13",
+          "sourceUrl": "http://bankruptcyfixesdebt.com/services/bankruptcy-litigation/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 2922,
+          "sha256": "7ae0c1288f0391334f5f469fac0fd4eba3a3812f34678048741baed407a9723d"
+        },
+        {
+          "id": "fineweb-<urn:uuid:f513bed4-4812-4bea-a83b-993d3be41d9d>",
+          "title": "FineWeb document 14",
+          "sourceUrl": "http://bestinbd.net/list-of-best-ielts-coaching-centers-in-bangladesh/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 6454,
+          "sha256": "90cf62eeadf6003365b79182b8c1b04b4a26fa96ae81b7f100e40d7250be35d3"
+        },
+        {
+          "id": "fineweb-<urn:uuid:f0820790-0d2a-4c51-ac7f-eac0b8e324d2>",
+          "title": "FineWeb document 15",
+          "sourceUrl": "http://bhutantoursandtreks.com/tskmfb/uohadz-c.html",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 2557,
+          "sha256": "9351fb4eb1bec9d1509c5feb9015dce04358dad115716015d47ec09c152396fb"
+        },
+        {
+          "id": "fineweb-<urn:uuid:f56a33ed-245e-42d6-9fe9-45d56bce8698>",
+          "title": "FineWeb document 16",
+          "sourceUrl": "http://bimsociety.org/phpBB3/smartfeed_url.php?sid=7150f0c03b2a17ad06b6155b906401ab",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 603,
+          "sha256": "bb9bbc589d01ac26cd87d9d3e83dbe955571e24dfa426141463ae39e66476ffe"
+        },
+        {
+          "id": "fineweb-<urn:uuid:4834d02a-5d89-41ed-8f3f-543afab93539>",
+          "title": "FineWeb document 17",
+          "sourceUrl": "http://blog.iavm.org/2014/04/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 1392,
+          "sha256": "4bfc55a2664d7cce19723ac648f493ff4da31c672f5559450de49d0c6a9080ab"
+        },
+        {
+          "id": "fineweb-<urn:uuid:90507c78-9312-4631-88d3-6ac553e4e590>",
+          "title": "FineWeb document 18",
+          "sourceUrl": "http://blog.rees.biz/2010/08/idisposable-what-is-it-when-to-use-it.html",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 6314,
+          "sha256": "8a3da37d2dfa342870e21ac19283cfb9c7ae1a56eeb50d042f027346368a2e5d"
+        },
+        {
+          "id": "fineweb-<urn:uuid:db9053fe-f85d-4ccc-8fb4-245e60713e18>",
+          "title": "FineWeb document 19",
+          "sourceUrl": "http://blog.woolwicharsenal.co.uk/archives/9427",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 4046,
+          "sha256": "289f0799c7f5690b4f22289b785bb280ee36d16ca44ae95fa852115151d1a460"
+        },
+        {
+          "id": "fineweb-<urn:uuid:49562677-334b-4e53-b6ed-6437c0b34418>",
+          "title": "FineWeb document 20",
+          "sourceUrl": "http://cannabisforweightloss.com/2022/07/cannabis-cartridge-products-can-be-finicky-depending-on-what-kind-of-battery-you-use-5/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 1705,
+          "sha256": "300d2b9fc1bd51c8c8c7189033c130849aca3ec1e74555040ca7049ce2a6a830"
+        },
+        {
+          "id": "fineweb-<urn:uuid:19ec7f00-1022-4638-914c-3411f3b394e1>",
+          "title": "FineWeb document 21",
+          "sourceUrl": "http://cannabisforweightloss.com/2023/02/cannabis-delivery-stops-stress-over-driving/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 1634,
+          "sha256": "284baa0d15f73f453122ad676ad98b03393070ce51596108ccbc655f9148101d"
+        },
+        {
+          "id": "fineweb-<urn:uuid:192d9ab8-cf72-4e63-8734-9aa68917bfa9>",
+          "title": "FineWeb document 22",
+          "sourceUrl": "http://canuswest.com/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 1186,
+          "sha256": "fc1501095bd3360d789495bb31a2c4ee45064939596dc201672e117a7e9ed96d"
+        },
+        {
+          "id": "fineweb-<urn:uuid:b808acd9-236b-4618-8ba1-5dc64574a114>",
+          "title": "FineWeb document 23",
+          "sourceUrl": "http://careyking.com/tag/energy-transition/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 17751,
+          "sha256": "f60d387780805e37f7b7f8efe1b06b6702c8b40a09ceb214662d1e008e729c9e"
+        },
+        {
+          "id": "fineweb-<urn:uuid:aafadccd-49f0-4615-8c9d-6a68122b2d33>",
+          "title": "FineWeb document 24",
+          "sourceUrl": "http://carlberry.co.uk/rfnshowo.asp?O=ABBEY",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 1056,
+          "sha256": "70d0fa0b4b0fe52df4e3c68de15377b6ae6a0aab70462bdd6531f15d098f00e8"
+        },
+        {
+          "id": "fineweb-<urn:uuid:ffec02e2-392e-4ca5-9167-cc0bdec8e2e9>",
+          "title": "FineWeb document 25",
+          "sourceUrl": "http://carringtonday.com/news-carrington-day-partners-with-sc-insights-for-lithium-industry-data.php?ok",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 2553,
+          "sha256": "26618eff34282974f68fa4667053f8a7505f7528e30a608c88673946b081c0a7"
+        },
+        {
+          "id": "fineweb-<urn:uuid:9a0c304b-bbad-4117-94cd-8e92b4344329>",
+          "title": "FineWeb document 26",
+          "sourceUrl": "http://cce-wakata.blogspot.com/2014/03/the-floodamental-question.html",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 1162,
+          "sha256": "c7b8e6617a3667e78223326d34e3cfc1ceb7f099ddbf0dfd368e02381f541cf6"
+        },
+        {
+          "id": "fineweb-<urn:uuid:70f07e48-9dba-40c8-b55d-f073c22fe764>",
+          "title": "FineWeb document 27",
+          "sourceUrl": "http://cdaonline.com/business-directory/members/user_account_add.php",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 372,
+          "sha256": "607dde5bc5977e0a9c9ee9b1140f7d9b46310ce599ea2ef258c77c2d77766612"
+        },
+        {
+          "id": "fineweb-<urn:uuid:a221fd66-a2c3-4133-a214-68c6eeefe992>",
+          "title": "FineWeb document 28",
+          "sourceUrl": "http://cdfpod.com/e/ep-74-shrunken-heads/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 533,
+          "sha256": "2315d96b0d571c992fbaa97925392cae39b7df512fc0e906d0602e90dc730bbe"
+        },
+        {
+          "id": "fineweb-<urn:uuid:ae19a1ad-150a-4665-ae73-09705d2e532e>",
+          "title": "FineWeb document 29",
+          "sourceUrl": "http://central-asia.media/19212-kyrgyz-celebrities-to-be-jailed-for-advertising-pyramid-schemes.html",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 1066,
+          "sha256": "66189aed1559650991f63f34c1ba9b3338ecb99071db028f5ba25b16b1605c1a"
+        },
+        {
+          "id": "fineweb-<urn:uuid:5c43c9a3-7f30-4ec6-9cbe-274583f31477>",
+          "title": "FineWeb document 30",
+          "sourceUrl": "http://cfbaltimore.com/1147/leave-my-dash-cam-on-overnight/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 5020,
+          "sha256": "ce0a9c8278e0e4e5941c21e2ca9a6abe0ba6cd1bd46d4833a726eebb252772f5"
+        },
+        {
+          "id": "fineweb-<urn:uuid:d88e720f-435d-4120-819f-d6af96678366>",
+          "title": "FineWeb document 31",
+          "sourceUrl": "http://chefinyou.com/article/how-to-store-cooked-beans-lentils",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 3551,
+          "sha256": "a5ee1d9fb2de76d953d0511d8bddf129d4be9c20e58237b2e053b27fc5e6e32e"
+        },
+        {
+          "id": "fineweb-<urn:uuid:6e8bc013-b883-472e-8d38-d4f93f058074>",
+          "title": "FineWeb document 32",
+          "sourceUrl": "http://chefinyou.com/member-recipes/vermicelli-basket/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 1158,
+          "sha256": "74a127df664ee898de382ce6c20dc096cb9831982cb1e6d74f74f5cee36eb0d1"
+        },
+        {
+          "id": "fineweb-<urn:uuid:1ae6718a-7988-480e-bbc8-1f40c5c71fa3>",
+          "title": "FineWeb document 33",
+          "sourceUrl": "http://chinesepaladin3.dearchibi.com/tag/the-young-warriors",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 910,
+          "sha256": "b2b0e8eff10f117dc2f543a29f758007e5995c623efd0c5ff9ad4aa8ed85eddb"
+        },
+        {
+          "id": "fineweb-<urn:uuid:bdc45a8e-4135-4ee3-ad49-ce67e7d2edf1>",
+          "title": "FineWeb document 34",
+          "sourceUrl": "http://classify.oclc.org/classify2/ClassifyDemo?wi=9442549477&startRec=0&orderBy=thold+desc",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 1292,
+          "sha256": "e3bfa60c1004153eb8c527e8b031d7fcec9009ed2102e7711a68508ff0b46557"
+        },
+        {
+          "id": "fineweb-<urn:uuid:3792a82e-9e7d-487c-9f73-90e6d9d310a2>",
+          "title": "FineWeb document 35",
+          "sourceUrl": "http://cleanbytes.net/malicious-code-types-and-trends-part-1",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 5172,
+          "sha256": "67607f1d07be751c098bff5020ffb821174c65b8d7553b34587a7822bb20a174"
+        },
+        {
+          "id": "fineweb-<urn:uuid:cf331561-ceff-4bdf-8a6f-c08b6dcf0689>",
+          "title": "FineWeb document 36",
+          "sourceUrl": "http://cliff-ruddell.co.uk/Ruddell-Resume.html",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 6960,
+          "sha256": "601de97c005c3d19c13e44538decfe9f38e0ba196198048f9ae09678d1dbd833"
+        },
+        {
+          "id": "fineweb-<urn:uuid:7170b0d3-ee7c-4b0f-a9aa-25a8de8c7a49>",
+          "title": "FineWeb document 37",
+          "sourceUrl": "http://colintalcroft.blogspot.com/2012/02/miscellaneous-yet-another-new-cocktail.html",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 2211,
+          "sha256": "a62882812f6061c6fe8e48e31790a8ae7d17274526b317a7485c6605f95a1ce6"
+        },
+        {
+          "id": "fineweb-<urn:uuid:48177599-b69a-4e89-9789-ad8ed211065f>",
+          "title": "FineWeb document 38",
+          "sourceUrl": "http://community.wikidot.com/helpon:dates",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 385,
+          "sha256": "0d25b23f091efeed91cbec6bfb9326a940790c41d52de08979d3056901c0a4dc"
+        },
+        {
+          "id": "fineweb-<urn:uuid:fc8c842c-199f-4b21-aece-179e979de6e3>",
+          "title": "FineWeb document 39",
+          "sourceUrl": "http://computerscienceteachingjobs.com/job/program-manager-institute-of-diversity-sciences-ids-leadership-academy-sloan-fellowship-program-hybrid-opportunity/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 4479,
+          "sha256": "48e296181c22eb194889f8129ddc8b363df51a5f17b1556f1d4fbae6c1004288"
+        },
+        {
+          "id": "fineweb-<urn:uuid:884ad21f-b27f-4e51-bc59-b8f46710aea0>",
+          "title": "FineWeb document 40",
+          "sourceUrl": "http://cornishonomastics.net/2021/07/16/werwerewr/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 2051,
+          "sha256": "fc54b67cd8e800a818ed05b1c50e3398bf29ed272879a585a115c35ed020438f"
+        },
+        {
+          "id": "fineweb-<urn:uuid:dde969c8-73b2-4bb9-b4e2-d33d43867811>",
+          "title": "FineWeb document 41",
+          "sourceUrl": "http://crucialblastshop.net/album.php?ID=9805",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 4354,
+          "sha256": "e4f1b482f99077ba0401e06793fab88d1d08f947be992a3aabd4c720b10e7085"
+        },
+        {
+          "id": "fineweb-<urn:uuid:365ad052-34b1-47d1-b4cf-8ace3b4761f3>",
+          "title": "FineWeb document 42",
+          "sourceUrl": "http://cruising.sailboatowners.com/cgi-bin/bbs62x/webbbs_config.pl/md/read/id/219547",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 1748,
+          "sha256": "16511986ee3a9e3dd8a3266e96ed1924110386cc1e15b2ced6dd0811df2bc5ab"
+        },
+        {
+          "id": "fineweb-<urn:uuid:6bd3a418-896d-468d-800d-ae599c4500b0>",
+          "title": "FineWeb document 43",
+          "sourceUrl": "http://cyprusfortravellers.net/en/place/kyriakides-musical-school-music-classes-limassol",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 415,
+          "sha256": "c908265748803ac21d3e49c37408c7dac938dae069c83f57cecc85f757009dfc"
+        },
+        {
+          "id": "fineweb-<urn:uuid:704039d3-a185-4a4b-8aca-1d21f8b278c9>",
+          "title": "FineWeb document 44",
+          "sourceUrl": "http://dadschangediaperstoo.com/casino-online-slots-in-denmark-2023/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 2947,
+          "sha256": "f350b087ea65155cf6899305a20c0e9ba56c395938ab0847b8d57eb15dcd9e84"
+        },
+        {
+          "id": "fineweb-<urn:uuid:0c80a9aa-a9a6-429b-b381-f635a8fa1e81>",
+          "title": "FineWeb document 45",
+          "sourceUrl": "http://delphigroups.info/2/25/332170.html",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 449,
+          "sha256": "f235db28fd0b8034bfb9eda6d5b796a3e0744d845c9bc2821728055f8384e2da"
+        },
+        {
+          "id": "fineweb-<urn:uuid:0efcd87d-0434-491b-a7ed-85a2ac6f0b2b>",
+          "title": "FineWeb document 46",
+          "sourceUrl": "http://democracyinafrica.org/rethinking-democratic-backsliding-how-the-global-rise-of-authoritarianism-is-misunderstood-and-why-it-matters/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 11920,
+          "sha256": "04fb141182f860c666dda48c59ca919b084538fe0b8c7808778105126ad6a70a"
+        },
+        {
+          "id": "fineweb-<urn:uuid:8ca70a75-1c77-4d42-aa6c-8ad7c40b0125>",
+          "title": "FineWeb document 47",
+          "sourceUrl": "http://dermotcasey.net/your-algorithmic-future-weapons-of-maths-creation-and-destruction/",
+          "license": "ODC-By-1.0; upstream Common Crawl terms apply",
+          "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+          "utf8Bytes": 10903,
+          "sha256": "e6a8a4d3fc0f7a86a2d82e83ffc30a73dcb971bc9aee849cc6f17e468aa4d899"
+        }
+      ]
+    },
+    {
+      "id": "github-repositories",
+      "label": "GitHub repositories",
+      "path": "tracks/github-repositories.jsonl",
+      "records": 10,
+      "utf8Bytes": 511587,
+      "jsonlSha256": "b9bec55c74c25ea31fd5850485f38230f491dfb7958b0b0b6d071704f0529ff3",
+      "groups": {},
+      "samples": [
+        {
+          "id": "github-cpython-json-decoder",
+          "title": "python/cpython · Lib/json/decoder.py",
+          "sourceUrl": "https://github.com/python/cpython/blob/b0c945a27e708419c6845234ef633ce3f7c4c41e/Lib/json/decoder.py",
+          "license": "PSF-2.0",
+          "revision": "b0c945a27e708419c6845234ef633ce3f7c4c41e",
+          "utf8Bytes": 13579,
+          "sha256": "a510e094f7df30be843206b2f43e5c12f788f6c3c8e964f5e652a64498e56a46"
+        },
+        {
+          "id": "github-typescript-scanner",
+          "title": "microsoft/TypeScript · src/compiler/scanner.ts",
+          "sourceUrl": "https://github.com/microsoft/TypeScript/blob/637d5746b70257028fb95aad32ddec6b26ab0a14/src/compiler/scanner.ts",
+          "license": "Apache-2.0",
+          "revision": "637d5746b70257028fb95aad32ddec6b26ab0a14",
+          "utf8Bytes": 157064,
+          "sha256": "03aaea617eadffe36dd52ae31c4be314a387ada05155201b17bd1d3c2e5d6f3b"
+        },
+        {
+          "id": "github-rust-core-str",
+          "title": "rust-lang/rust · library/core/src/str/mod.rs",
+          "sourceUrl": "https://github.com/rust-lang/rust/blob/b9ee8d8bcb1e4c7905a183a37e6d984c4b9a8468/library/core/src/str/mod.rs",
+          "license": "MIT OR Apache-2.0",
+          "revision": "b9ee8d8bcb1e4c7905a183a37e6d984c4b9a8468",
+          "utf8Bytes": 116941,
+          "sha256": "ce8dcb5aa4b7d181027dd073f9898e23be957bf45e32811b48e324532cf8e301"
+        },
+        {
+          "id": "github-fmt-format-header",
+          "title": "fmtlib/fmt · include/fmt/format.h",
+          "sourceUrl": "https://github.com/fmtlib/fmt/blob/bcaa44d05579c75a83571821faee7acf6a9a0d55/include/fmt/format.h",
+          "license": "MIT",
+          "revision": "bcaa44d05579c75a83571821faee7acf6a9a0d55",
+          "utf8Bytes": 159999,
+          "sha256": "384b2c520d71858aa96a96a756ebf9a9ab7e089a175493b01abbb95943dc292c"
+        },
+        {
+          "id": "github-guava-immutable-list",
+          "title": "google/guava · guava/src/com/google/common/collect/ImmutableList.java",
+          "sourceUrl": "https://github.com/google/guava/blob/9917ba909a29d3771c3551d3c133cda94cee187a/guava/src/com/google/common/collect/ImmutableList.java",
+          "license": "Apache-2.0",
+          "revision": "9917ba909a29d3771c3551d3c133cda94cee187a",
+          "utf8Bytes": 31497,
+          "sha256": "e94f3c9a8bb7d766d220e0c77a8a5292408b728120f182c19f1785a645073431"
+        },
+        {
+          "id": "github-typescript-package-json",
+          "title": "microsoft/TypeScript · package.json",
+          "sourceUrl": "https://github.com/microsoft/TypeScript/blob/637d5746b70257028fb95aad32ddec6b26ab0a14/package.json",
+          "license": "Apache-2.0",
+          "revision": "637d5746b70257028fb95aad32ddec6b26ab0a14",
+          "utf8Bytes": 3467,
+          "sha256": "6589b67e78ad254472274a2e2eca1071f895f44fe35f3b458f66caaf71e3ec64"
+        },
+        {
+          "id": "github-typescript-readme",
+          "title": "microsoft/TypeScript · README.md",
+          "sourceUrl": "https://github.com/microsoft/TypeScript/blob/637d5746b70257028fb95aad32ddec6b26ab0a14/README.md",
+          "license": "Apache-2.0",
+          "revision": "637d5746b70257028fb95aad32ddec6b26ab0a14",
+          "utf8Bytes": 3470,
+          "sha256": "0ecaa661620cf819bd7d320df53c0cb8279713bb16bbf049e32b386f499ae78a"
+        },
+        {
+          "id": "github-rust-readme",
+          "title": "rust-lang/rust · README.md",
+          "sourceUrl": "https://github.com/rust-lang/rust/blob/b9ee8d8bcb1e4c7905a183a37e6d984c4b9a8468/README.md",
+          "license": "MIT OR Apache-2.0",
+          "revision": "b9ee8d8bcb1e4c7905a183a37e6d984c4b9a8468",
+          "utf8Bytes": 3303,
+          "sha256": "af581e8dc9f7e86aeb61a8aeccb382f059cedd28ad15f740a15ad86b8cc26303"
+        },
+        {
+          "id": "github-fmt-readme",
+          "title": "fmtlib/fmt · README.md",
+          "sourceUrl": "https://github.com/fmtlib/fmt/blob/bcaa44d05579c75a83571821faee7acf6a9a0d55/README.md",
+          "license": "MIT",
+          "revision": "bcaa44d05579c75a83571821faee7acf6a9a0d55",
+          "utf8Bytes": 15969,
+          "sha256": "46009ea53e84eabf3b304c7ce72c152306cd78705e5711114dccf9a9f4cc1a47"
+        },
+        {
+          "id": "github-guava-readme",
+          "title": "google/guava · README.md",
+          "sourceUrl": "https://github.com/google/guava/blob/9917ba909a29d3771c3551d3c133cda94cee187a/README.md",
+          "license": "Apache-2.0",
+          "revision": "9917ba909a29d3771c3551d3c133cda94cee187a",
+          "utf8Bytes": 6298,
+          "sha256": "facacb68519ab37564b350248be472144067d784e841254458c015074d3364df"
+        }
+      ]
+    },
+    {
+      "id": "stack-overflow",
+      "label": "Stack Overflow",
+      "path": "tracks/stack-overflow.jsonl",
+      "records": 3,
+      "utf8Bytes": 299999,
+      "jsonlSha256": "1c46bffb6f01463bb1c68b4d363318292f1eb5bc242a202873a3b476891c7241",
+      "groups": {},
+      "samples": [
+        {
+          "id": "stackoverflow-text-231767",
+          "title": "What does the yield keyword do in Python?",
+          "sourceUrl": "https://stackoverflow.com/questions/231767",
+          "license": "CC BY-SA 4.0",
+          "revision": "StackPrinter export",
+          "utf8Bytes": 100000,
+          "sha256": "7f61f6563655f1ecafcbcb668f14784c02f60d47410c9fc0d5ed825cc7e1b0a6"
+        },
+        {
+          "id": "stackoverflow-text-11227809",
+          "title": "Why is processing a sorted array faster than an unsorted array?",
+          "sourceUrl": "https://stackoverflow.com/questions/11227809",
+          "license": "CC BY-SA 4.0",
+          "revision": "StackPrinter export",
+          "utf8Bytes": 99999,
+          "sha256": "2d529c306a48568816eaa7939f3810bcf1ef931594e1149c3642657789ee6fea"
+        },
+        {
+          "id": "stackoverflow-text-927358",
+          "title": "How do I undo the most recent local commits in Git?",
+          "sourceUrl": "https://stackoverflow.com/questions/927358",
+          "license": "CC BY-SA 4.0",
+          "revision": "StackPrinter export",
+          "utf8Bytes": 100000,
+          "sha256": "70faebb42c04739b6a2746dec7953b134a982354056ad1b5801419315d8f42a9"
+        }
+      ]
+    },
+    {
+      "id": "books",
+      "label": "Books",
+      "path": "tracks/books.jsonl",
+      "records": 3,
+      "utf8Bytes": 234968,
+      "jsonlSha256": "559fcfc4d2837fe68e24fefbcab5a4099be97cc1db78200615f1b67ef4d949ec",
+      "groups": {},
+      "samples": [
+        {
+          "id": "pg1342",
+          "title": "Pride and Prejudice",
+          "sourceUrl": "https://www.gutenberg.org/cache/epub/1342/pg1342.txt",
+          "license": "Project Gutenberg public-domain distribution terms",
+          "revision": "Project Gutenberg ebook 1342",
+          "utf8Bytes": 78376,
+          "sha256": "f3c1980a3b804a8ca6577d94254e67bcc691862c6848fb2556f42ba19266c1e8"
+        },
+        {
+          "id": "pg2701",
+          "title": "Moby-Dick; or, The Whale",
+          "sourceUrl": "https://www.gutenberg.org/cache/epub/2701/pg2701.txt",
+          "license": "Project Gutenberg public-domain distribution terms",
+          "revision": "Project Gutenberg ebook 2701",
+          "utf8Bytes": 78340,
+          "sha256": "0ca0f1bc9b0040dfd45e49ab2fcebd3009cbe4c899f82322eda4ee6470e0ae69"
+        },
+        {
+          "id": "pg1661",
+          "title": "The Adventures of Sherlock Holmes",
+          "sourceUrl": "https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
+          "license": "Project Gutenberg public-domain distribution terms",
+          "revision": "Project Gutenberg ebook 1661",
+          "utf8Bytes": 78252,
+          "sha256": "9d8f79720db826bff046bf4b4540c138725f985b1fe04efcd5c49b276cc013b8"
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "label": "News articles",
+      "path": "tracks/news.jsonl",
+      "records": 10,
+      "utf8Bytes": 43951,
+      "jsonlSha256": "e2c8dbc641614b55af5197351d2f3846c62cc5460b59fcb1e7583173806783cf",
+      "groups": {},
+      "samples": [
+        {
+          "id": "wikinews-5024647",
+          "title": "US president Donald Trump demands the unconditional surrender of Iran",
+          "sourceUrl": "https://en.wikinews.org/?curid=3082598",
+          "license": "CC BY 2.5",
+          "revision": "5024647",
+          "utf8Bytes": 2502,
+          "sha256": "b338c61aa4a6193befd48b3a9c623c9a607dbf2fc8f2c676471a24f9d8095d56"
+        },
+        {
+          "id": "wikinews-5024646",
+          "title": "Australian Minister for Energy lowers fuel standards for 60 days amid rising oil prices, panic buying",
+          "sourceUrl": "https://en.wikinews.org/?curid=3083848",
+          "license": "CC BY 2.5",
+          "revision": "5024646",
+          "utf8Bytes": 3204,
+          "sha256": "c26a8303c5ae39866b70d7dce52382cc998dfb376d1f3c8cae46893eea68ae55"
+        },
+        {
+          "id": "wikinews-5024637",
+          "title": "\"One Battle After Another\" wins 6 Oscars including Best Picture",
+          "sourceUrl": "https://en.wikinews.org/?curid=3084760",
+          "license": "CC BY 2.5",
+          "revision": "5024637",
+          "utf8Bytes": 4181,
+          "sha256": "7bc3903cb65c1b690703411e1a49cd4ebb558ad4284f918b5e129cadfdaf1b4b"
+        },
+        {
+          "id": "wikinews-5024638",
+          "title": "Caloundra win round 3 game in Australian soccer's Football Queensland Premier League 2 competition",
+          "sourceUrl": "https://en.wikinews.org/?curid=3084787",
+          "license": "CC BY 2.5",
+          "revision": "5024638",
+          "utf8Bytes": 3463,
+          "sha256": "ddde72c3cabd72439fd1be65d599279ddea72a18d3d31374fa3d25821ac71a12"
+        },
+        {
+          "id": "wikinews-5024643",
+          "title": "Boats carrying Kyoto students capsize off Okinawa, fatalities reported",
+          "sourceUrl": "https://en.wikinews.org/?curid=3084894",
+          "license": "CC BY 2.5",
+          "revision": "5024643",
+          "utf8Bytes": 1735,
+          "sha256": "837e9aaed1ceab4ce73a3d1b2dc2642221918cae96bd60b108d08d2174ac2fdb"
+        },
+        {
+          "id": "wikinews-5024622",
+          "title": "Musique Libre Femmes plays for Women's History Month at Tompkins Square Library in New York City",
+          "sourceUrl": "https://en.wikinews.org/?curid=3084932",
+          "license": "CC BY 2.5",
+          "revision": "5024622",
+          "utf8Bytes": 3763,
+          "sha256": "9e949c8fb35862b1b87826769e8a42ae91322d0aa2abb9b59da202311cd410fa"
+        },
+        {
+          "id": "wikinews-5024624",
+          "title": "South Korean military halts small firearms drills after stray bullet strikes young girl on playground",
+          "sourceUrl": "https://en.wikinews.org/?curid=3085450",
+          "license": "CC BY 2.5",
+          "revision": "5024624",
+          "utf8Bytes": 2924,
+          "sha256": "0a193b1d087541e6057313aef6f5fa4b5763d5361ba7e0132b6f610701002606"
+        },
+        {
+          "id": "wikinews-5025600",
+          "title": "Wikimedia Foundation closes Wikinews after 21 years",
+          "sourceUrl": "https://en.wikinews.org/?curid=3088290",
+          "license": "CC BY 2.5",
+          "revision": "5025600",
+          "utf8Bytes": 14005,
+          "sha256": "ac8cf856e3c9e5b47a8d92ef0c4d089f70c568e3562e5ba9bf36b0a41e3b71e8"
+        },
+        {
+          "id": "wikinews-5013889",
+          "title": "United States announces blockade on the Strait of Hormuz",
+          "sourceUrl": "https://en.wikinews.org/?curid=3091494",
+          "license": "CC BY 2.5",
+          "revision": "5013889",
+          "utf8Bytes": 3728,
+          "sha256": "d543cb9acf12a4bea782f3d7094936215f5b1b187149e56f25b697dc922dc964"
+        },
+        {
+          "id": "wikinews-5024678",
+          "title": "Pope Leo XIV visits four nations in Africa",
+          "sourceUrl": "https://en.wikinews.org/?curid=3093065",
+          "license": "CC BY 2.5",
+          "revision": "5024678",
+          "utf8Bytes": 4446,
+          "sha256": "a8795c87722679a4eeee64d91aa151fe83d9310f5a5964343c43f085a47c83ad"
+        }
+      ]
+    },
+    {
+      "id": "scientific-papers",
+      "label": "Scientific papers",
+      "path": "tracks/scientific-papers.jsonl",
+      "records": 5,
+      "utf8Bytes": 213162,
+      "jsonlSha256": "c145cb9eb5b75e8f09f27c4927948c1485ff9819fb4f92dfad078fcb5f57671b",
+      "groups": {},
+      "samples": [
+        {
+          "id": "pmc4302049",
+          "title": "Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2",
+          "sourceUrl": "https://europepmc.org/articles/PMC4302049",
+          "license": "Each selected full text is marked open access and CC BY by Europe PMC",
+          "revision": "PMC4302049",
+          "utf8Bytes": 50000,
+          "sha256": "b2a26bc2659d5a777c837100ccd89d1af140c0df4d499f12f1c909d9e3e208ab"
+        },
+        {
+          "id": "pmc8005924",
+          "title": "The PRISMA 2020 statement: an updated guideline for reporting systematic reviews",
+          "sourceUrl": "https://europepmc.org/articles/PMC8005924",
+          "license": "Each selected full text is marked open access and CC BY by Europe PMC",
+          "revision": "PMC8005924",
+          "utf8Bytes": 50000,
+          "sha256": "58861a0f8245dd01b08e1daea9fe3b27ddd581cb7f0e3d00f724a92c78168318"
+        },
+        {
+          "id": "pmc4103590",
+          "title": "Trimmomatic: a flexible trimmer for Illumina sequence data",
+          "sourceUrl": "https://europepmc.org/articles/PMC4103590",
+          "license": "Each selected full text is marked open access and CC BY by Europe PMC",
+          "revision": "PMC4103590",
+          "utf8Bytes": 32652,
+          "sha256": "2e8f1a6a2153dfa84ddd4da616a3c16b5cc49acff2d8878913b497b384495a5e"
+        },
+        {
+          "id": "pmc2707599",
+          "title": "Preferred Reporting Items for Systematic Reviews and Meta-Analyses: The PRISMA Statement",
+          "sourceUrl": "https://europepmc.org/articles/PMC2707599",
+          "license": "Each selected full text is marked open access and CC BY by Europe PMC",
+          "revision": "PMC2707599",
+          "utf8Bytes": 35644,
+          "sha256": "34bc3b380430b4f4c6015cdae4be1bcfff4f16fe130c1b3c672a6f152cfc060a"
+        },
+        {
+          "id": "pmc8371605",
+          "title": "Highly accurate protein structure prediction with AlphaFold",
+          "sourceUrl": "https://europepmc.org/articles/PMC8371605",
+          "license": "Each selected full text is marked open access and CC BY by Europe PMC",
+          "revision": "PMC8371605",
+          "utf8Bytes": 44866,
+          "sha256": "571582133a4b5df8e12c751cace3e51bb0433c4cd566d63e8d4c10c90a5524a8"
+        }
+      ]
+    },
+    {
+      "id": "html",
+      "label": "HTML",
+      "path": "tracks/html.jsonl",
+      "records": 3,
+      "utf8Bytes": 299996,
+      "jsonlSha256": "488e945db794bff4796e946f799ba0859831c76a45e407b31d5aa5dfc49988a9",
+      "groups": {},
+      "samples": [
+        {
+          "id": "stackoverflow-html-231767",
+          "title": "StackPrinter HTML · What does the yield keyword do in Python?",
+          "sourceUrl": "https://stackoverflow.com/questions/231767",
+          "license": "CC BY-SA 4.0",
+          "revision": "StackPrinter export",
+          "utf8Bytes": 100000,
+          "sha256": "ea66c68c0b1d7e10a02cdb71d2d386c09469b7219c178497966d22f2364d92dc"
+        },
+        {
+          "id": "stackoverflow-html-11227809",
+          "title": "StackPrinter HTML · Why is processing a sorted array faster than an unsorted array?",
+          "sourceUrl": "https://stackoverflow.com/questions/11227809",
+          "license": "CC BY-SA 4.0",
+          "revision": "StackPrinter export",
+          "utf8Bytes": 99996,
+          "sha256": "5365c4150974f0c1506d8fd5e18407125c01e1ece41bb6e4f00e0a180e491384"
+        },
+        {
+          "id": "stackoverflow-html-927358",
+          "title": "StackPrinter HTML · How do I undo the most recent local commits in Git?",
+          "sourceUrl": "https://stackoverflow.com/questions/927358",
+          "license": "CC BY-SA 4.0",
+          "revision": "StackPrinter export",
+          "utf8Bytes": 100000,
+          "sha256": "1a2fb5509854817addb8cf34f0148dc1089814f575debe9a766b774c948f9f23"
+        }
+      ]
+    },
+    {
+      "id": "json",
+      "label": "JSON",
+      "path": "tracks/json.jsonl",
+      "records": 1,
+      "utf8Bytes": 3467,
+      "jsonlSha256": "a63c17a31ba327ce221afee1b3c18d98ac3f4f123d5ee71e5b6b187ecda9a009",
+      "groups": {},
+      "samples": [
+        {
+          "id": "typescript-package-json",
+          "title": "microsoft/TypeScript · package.json",
+          "sourceUrl": "https://github.com/microsoft/TypeScript/blob/637d5746b70257028fb95aad32ddec6b26ab0a14/package.json",
+          "license": "Apache-2.0",
+          "revision": "637d5746b70257028fb95aad32ddec6b26ab0a14",
+          "utf8Bytes": 3467,
+          "sha256": "6589b67e78ad254472274a2e2eca1071f895f44fe35f3b458f66caaf71e3ec64"
+        }
+      ]
+    },
+    {
+      "id": "markdown",
+      "label": "Markdown",
+      "path": "tracks/markdown.jsonl",
+      "records": 4,
+      "utf8Bytes": 29040,
+      "jsonlSha256": "28149fed85027e22fa0edad73ef8124a93033e2f8a63ee35a8fa5be003fe7572",
+      "groups": {},
+      "samples": [
+        {
+          "id": "typescript-readme",
+          "title": "microsoft/TypeScript · README.md",
+          "sourceUrl": "https://github.com/microsoft/TypeScript/blob/637d5746b70257028fb95aad32ddec6b26ab0a14/README.md",
+          "license": "Apache-2.0",
+          "revision": "637d5746b70257028fb95aad32ddec6b26ab0a14",
+          "utf8Bytes": 3470,
+          "sha256": "0ecaa661620cf819bd7d320df53c0cb8279713bb16bbf049e32b386f499ae78a"
+        },
+        {
+          "id": "rust-readme",
+          "title": "rust-lang/rust · README.md",
+          "sourceUrl": "https://github.com/rust-lang/rust/blob/b9ee8d8bcb1e4c7905a183a37e6d984c4b9a8468/README.md",
+          "license": "MIT OR Apache-2.0",
+          "revision": "b9ee8d8bcb1e4c7905a183a37e6d984c4b9a8468",
+          "utf8Bytes": 3303,
+          "sha256": "af581e8dc9f7e86aeb61a8aeccb382f059cedd28ad15f740a15ad86b8cc26303"
+        },
+        {
+          "id": "fmt-readme",
+          "title": "fmtlib/fmt · README.md",
+          "sourceUrl": "https://github.com/fmtlib/fmt/blob/bcaa44d05579c75a83571821faee7acf6a9a0d55/README.md",
+          "license": "MIT",
+          "revision": "bcaa44d05579c75a83571821faee7acf6a9a0d55",
+          "utf8Bytes": 15969,
+          "sha256": "46009ea53e84eabf3b304c7ce72c152306cd78705e5711114dccf9a9f4cc1a47"
+        },
+        {
+          "id": "guava-readme",
+          "title": "google/guava · README.md",
+          "sourceUrl": "https://github.com/google/guava/blob/9917ba909a29d3771c3551d3c133cda94cee187a/README.md",
+          "license": "Apache-2.0",
+          "revision": "9917ba909a29d3771c3551d3c133cda94cee187a",
+          "utf8Bytes": 6298,
+          "sha256": "facacb68519ab37564b350248be472144067d784e841254458c015074d3364df"
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "path": "tracks/python.jsonl",
+      "records": 1,
+      "utf8Bytes": 13579,
+      "jsonlSha256": "d1c56140dc3adde21297aceeaadbbe3c2279b6d58ff58650e6b2e294ff9506d4",
+      "groups": {},
+      "samples": [
+        {
+          "id": "cpython-json-decoder",
+          "title": "python/cpython · Lib/json/decoder.py",
+          "sourceUrl": "https://github.com/python/cpython/blob/b0c945a27e708419c6845234ef633ce3f7c4c41e/Lib/json/decoder.py",
+          "license": "PSF-2.0",
+          "revision": "b0c945a27e708419c6845234ef633ce3f7c4c41e",
+          "utf8Bytes": 13579,
+          "sha256": "a510e094f7df30be843206b2f43e5c12f788f6c3c8e964f5e652a64498e56a46"
+        }
+      ]
+    },
+    {
+      "id": "typescript",
+      "label": "TypeScript",
+      "path": "tracks/typescript.jsonl",
+      "records": 1,
+      "utf8Bytes": 157064,
+      "jsonlSha256": "a9915519d3db063b003d4bc58b24518a1355abedf364824b84290d6e7a024edc",
+      "groups": {},
+      "samples": [
+        {
+          "id": "typescript-scanner",
+          "title": "microsoft/TypeScript · src/compiler/scanner.ts",
+          "sourceUrl": "https://github.com/microsoft/TypeScript/blob/637d5746b70257028fb95aad32ddec6b26ab0a14/src/compiler/scanner.ts",
+          "license": "Apache-2.0",
+          "revision": "637d5746b70257028fb95aad32ddec6b26ab0a14",
+          "utf8Bytes": 157064,
+          "sha256": "03aaea617eadffe36dd52ae31c4be314a387ada05155201b17bd1d3c2e5d6f3b"
+        }
+      ]
+    },
+    {
+      "id": "rust",
+      "label": "Rust",
+      "path": "tracks/rust.jsonl",
+      "records": 1,
+      "utf8Bytes": 116941,
+      "jsonlSha256": "17db53fba816057c9eb726b2cf08d488c9d8f01329e1223d3b46447ff866a542",
+      "groups": {},
+      "samples": [
+        {
+          "id": "rust-core-str",
+          "title": "rust-lang/rust · library/core/src/str/mod.rs",
+          "sourceUrl": "https://github.com/rust-lang/rust/blob/b9ee8d8bcb1e4c7905a183a37e6d984c4b9a8468/library/core/src/str/mod.rs",
+          "license": "MIT OR Apache-2.0",
+          "revision": "b9ee8d8bcb1e4c7905a183a37e6d984c4b9a8468",
+          "utf8Bytes": 116941,
+          "sha256": "ce8dcb5aa4b7d181027dd073f9898e23be957bf45e32811b48e324532cf8e301"
+        }
+      ]
+    },
+    {
+      "id": "cpp",
+      "label": "C++",
+      "path": "tracks/cpp.jsonl",
+      "records": 1,
+      "utf8Bytes": 159999,
+      "jsonlSha256": "0406561a1e434246ed4c2c43c2f71bc9c44a5ec26deb3a946163d77c3951dbad",
+      "groups": {},
+      "samples": [
+        {
+          "id": "fmt-format-header",
+          "title": "fmtlib/fmt · include/fmt/format.h",
+          "sourceUrl": "https://github.com/fmtlib/fmt/blob/bcaa44d05579c75a83571821faee7acf6a9a0d55/include/fmt/format.h",
+          "license": "MIT",
+          "revision": "bcaa44d05579c75a83571821faee7acf6a9a0d55",
+          "utf8Bytes": 159999,
+          "sha256": "384b2c520d71858aa96a96a756ebf9a9ab7e089a175493b01abbb95943dc292c"
+        }
+      ]
+    },
+    {
+      "id": "java",
+      "label": "Java",
+      "path": "tracks/java.jsonl",
+      "records": 1,
+      "utf8Bytes": 31497,
+      "jsonlSha256": "260f22bf71a835dc49f5537352cdecfd9cec95b46f0fad88700efc2cb9aff9b5",
+      "groups": {},
+      "samples": [
+        {
+          "id": "guava-immutable-list",
+          "title": "google/guava · guava/src/com/google/common/collect/ImmutableList.java",
+          "sourceUrl": "https://github.com/google/guava/blob/9917ba909a29d3771c3551d3c133cda94cee187a/guava/src/com/google/common/collect/ImmutableList.java",
+          "license": "Apache-2.0",
+          "revision": "9917ba909a29d3771c3551d3c133cda94cee187a",
+          "utf8Bytes": 31497,
+          "sha256": "e94f3c9a8bb7d766d220e0c77a8a5292408b728120f182c19f1785a645073431"
+        }
+      ]
+    },
+    {
+      "id": "tokenizerbench-languages",
+      "label": "TokenizerBench · 84 languages",
+      "path": "tracks/tokenizerbench-languages.jsonl",
+      "records": 1193,
+      "utf8Bytes": 120371,
+      "jsonlSha256": "1475b81828ff576a9416877b05b297916a5d84e191eef0fcbf2a975800c12ae5",
+      "groups": {
+        "english": 20,
+        "hindi": 20,
+        "spanish": 20,
+        "chinese_simplified": 20,
+        "arabic": 20,
+        "russian": 20,
+        "japanese": 20,
+        "korean": 20,
+        "german": 20,
+        "french": 20,
+        "tamil": 20,
+        "bengali": 20,
+        "urdu": 20,
+        "mixed_multilingual": 20,
+        "portuguese": 20,
+        "turkish": 20,
+        "swahili": 15,
+        "vietnamese": 17,
+        "persian": 15,
+        "thai": 16,
+        "greek": 15,
+        "hebrew": 15,
+        "indonesian": 20,
+        "polish": 17,
+        "ukrainian": 15,
+        "czech": 15,
+        "malay": 14,
+        "nepali": 15,
+        "sinhala": 14,
+        "icelandic": 14,
+        "georgian": 12,
+        "armenian": 12,
+        "amharic": 12,
+        "mongolian": 12,
+        "zulu": 10,
+        "afrikaans": 15,
+        "welsh": 14,
+        "irish": 14,
+        "basque": 14,
+        "tibetan": 10,
+        "filipino": 14,
+        "norwegian": 15,
+        "danish": 14,
+        "finnish": 15,
+        "hungarian": 15,
+        "romanian": 15,
+        "slovak": 15,
+        "serbian": 15,
+        "croatian": 15,
+        "lithuanian": 14,
+        "macedonian": 14,
+        "albanian": 14,
+        "galician": 14,
+        "burmese": 11,
+        "khmer": 10,
+        "lao": 10,
+        "malagasy": 10,
+        "chinese_traditional": 14,
+        "catalan": 14,
+        "latvian": 14,
+        "estonian": 14,
+        "slovenian": 14,
+        "bulgarian": 14,
+        "azerbaijani": 14,
+        "kazakh": 10,
+        "uzbek": 10,
+        "belarusian": 11,
+        "punjabi": 11,
+        "gujarati": 10,
+        "marathi": 10,
+        "telugu": 10,
+        "kannada": 10,
+        "malayalam": 10,
+        "hausa": 10,
+        "yoruba": 10,
+        "esperanto": 11,
+        "latin": 10,
+        "tagalog": 10,
+        "cebuano": 10,
+        "javanese": 10,
+        "luxembourgish": 10,
+        "maltese": 10,
+        "occitan": 10,
+        "scots_gaelic": 10
+      },
+      "samples": [
+        {
+          "id": "tokenizerbench-languages-english-001",
+          "title": "english · case 1",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 44,
+          "sha256": "ef537f25c895bfa782526529a9b63d97aa631564d5d789c2b765448c8635fb6c"
+        },
+        {
+          "id": "tokenizerbench-languages-english-002",
+          "title": "english · case 2",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 55,
+          "sha256": "8c4730e8a5b8083ceacb453cc768c196342aa8ee1452866c0c9055241759aafc"
+        },
+        {
+          "id": "tokenizerbench-languages-english-003",
+          "title": "english · case 3",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 62,
+          "sha256": "3eaae04e4ca6a2deab874878398144df5136d21d6e7bbd7f6ea0ce042d427de9"
+        },
+        {
+          "id": "tokenizerbench-languages-english-004",
+          "title": "english · case 4",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 67,
+          "sha256": "f49400246d7a18090dab6f2a1d11bfc6ff270d28bc869b9555c272f20cefb297"
+        },
+        {
+          "id": "tokenizerbench-languages-english-005",
+          "title": "english · case 5",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 63,
+          "sha256": "d303243f0a5d97d527acbaa4d964ed9c9ec2a8973988b4be6b3b2b3bfba36ab3"
+        },
+        {
+          "id": "tokenizerbench-languages-english-006",
+          "title": "english · case 6",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 70,
+          "sha256": "f3d913c639015e3b5c46c45687d5c697039e948472d92c40ee7bd8d3dbd93dc2"
+        },
+        {
+          "id": "tokenizerbench-languages-english-007",
+          "title": "english · case 7",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 69,
+          "sha256": "50f08de6c3d6d9620254b64a2393f8a71368b53f07d64d70650069762ca331d1"
+        },
+        {
+          "id": "tokenizerbench-languages-english-008",
+          "title": "english · case 8",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 71,
+          "sha256": "13243aa96a3846a13cc5238217c8daf6b89ee95e9a47efb131f6169f3e3de96f"
+        },
+        {
+          "id": "tokenizerbench-languages-english-009",
+          "title": "english · case 9",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 79,
+          "sha256": "2cdc837a20fa0a41ba72af32285a3b75683fdca1bec6d1fddc3f46d8daae497d"
+        },
+        {
+          "id": "tokenizerbench-languages-english-010",
+          "title": "english · case 10",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 64,
+          "sha256": "df890c901416e45bbfec8771bea367fc4949d3e8a46dc4d184060e52f16c9eeb"
+        },
+        {
+          "id": "tokenizerbench-languages-english-011",
+          "title": "english · case 11",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 67,
+          "sha256": "e2c452a6028673f75eeb08ee28e21cb8197d6d259cb967edc4f2b2f9a69f8017"
+        },
+        {
+          "id": "tokenizerbench-languages-english-012",
+          "title": "english · case 12",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 72,
+          "sha256": "f01d8530d5fcaec9ead2f4f1f1da08b94397dbe3a13f0fbe4e37b7448def4d76"
+        },
+        {
+          "id": "tokenizerbench-languages-english-013",
+          "title": "english · case 13",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 72,
+          "sha256": "12151c0fb9b2b7050a2b7231ef93c8b00197d0018d265cbbb2e1c3abb81f14df"
+        },
+        {
+          "id": "tokenizerbench-languages-english-014",
+          "title": "english · case 14",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 73,
+          "sha256": "d5b7219996659b24fb30854d4a725661108f5effe7848ac462bcee43dc9837d7"
+        },
+        {
+          "id": "tokenizerbench-languages-english-015",
+          "title": "english · case 15",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 74,
+          "sha256": "093b37bca4cf81419511c0248be50c98f41b2475d7578905cbdf843c47ba1dc5"
+        },
+        {
+          "id": "tokenizerbench-languages-english-016",
+          "title": "english · case 16",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 225,
+          "sha256": "8a9eeb29b20c994c4ba92ab776d1b7aa62245dae9ca6519c41ee429fba7ed106"
+        },
+        {
+          "id": "tokenizerbench-languages-english-017",
+          "title": "english · case 17",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 499,
+          "sha256": "d4c2bc406da94e294da816922e09491765a67c1667aff6b0a1aa88b22458e16d"
+        },
+        {
+          "id": "tokenizerbench-languages-english-018",
+          "title": "english · case 18",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 51,
+          "sha256": "58cba4bfa47c025d17ca628912a71c9d3c7dc2b0a40dcb18a911696ab78c1225"
+        },
+        {
+          "id": "tokenizerbench-languages-english-019",
+          "title": "english · case 19",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 55,
+          "sha256": "820f4c045df7877452f5b971d2f28fef3293b51d9a39daac908887bf0fceaa9c"
+        },
+        {
+          "id": "tokenizerbench-languages-english-020",
+          "title": "english · case 20",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 57,
+          "sha256": "a7433b81a933e8e0de077fa563b6375a43c6ce3790292a2f36ba1e5045887739"
+        }
+      ]
+    },
+    {
+      "id": "tokenizerbench-code",
+      "label": "TokenizerBench · 17 code languages",
+      "path": "tracks/tokenizerbench-code.jsonl",
+      "records": 245,
+      "utf8Bytes": 18524,
+      "jsonlSha256": "4e07c0f4e53b502deaa6446794fb3d0553e24550fec1c26d538f1fd16b19ddd5",
+      "groups": {
+        "python": 20,
+        "javascript": 20,
+        "typescript": 15,
+        "cpp": 20,
+        "rust": 20,
+        "go": 20,
+        "java": 20,
+        "python_ml": 10,
+        "sql": 15,
+        "bash": 15,
+        "web": 10,
+        "gpu_cuda": 10,
+        "functional": 10,
+        "solidity": 10,
+        "shell_scripting": 10,
+        "kotlin_swift": 10,
+        "php_ruby": 10
+      },
+      "samples": [
+        {
+          "id": "tokenizerbench-code-python-001",
+          "title": "python · case 1",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 41,
+          "sha256": "39c9d973e97515088425b80e634ae0a40a5f5c681dd6bd2831f8937c5b20357f"
+        },
+        {
+          "id": "tokenizerbench-code-python-002",
+          "title": "python · case 2",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 52,
+          "sha256": "15bad3769e3c85b8077eb0b1228137af03ef473f334f0049cad13cc46d89a771"
+        },
+        {
+          "id": "tokenizerbench-code-python-003",
+          "title": "python · case 3",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 36,
+          "sha256": "452c56af9916f345f346495d17966a1598de2b7fbf3d6cd8602139c8e3d0ca98"
+        },
+        {
+          "id": "tokenizerbench-code-python-004",
+          "title": "python · case 4",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 15,
+          "sha256": "df1a46a7d36afcf410cb3fe096c3c558ea79b0578efd1dcd832a4a3638822108"
+        },
+        {
+          "id": "tokenizerbench-code-python-005",
+          "title": "python · case 5",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 62,
+          "sha256": "d60f96090e65ad878d83ed3bd0eb35d58ce1ba343f92694380f11525529d1e89"
+        },
+        {
+          "id": "tokenizerbench-code-python-006",
+          "title": "python · case 6",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 120,
+          "sha256": "bb3cc1e404fa627a9c57c02f34da389c972cb4831f924b2078ca8ec8513e5b86"
+        },
+        {
+          "id": "tokenizerbench-code-python-007",
+          "title": "python · case 7",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 70,
+          "sha256": "9c2e3298890a0664f177f6974790bdde0d1e5ab56f059f5251f0c5add1276f17"
+        },
+        {
+          "id": "tokenizerbench-code-python-008",
+          "title": "python · case 8",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 62,
+          "sha256": "bb23de5b546029d5786bbb771811962c13dbe674c20f31cc1eecda873b4c10cb"
+        },
+        {
+          "id": "tokenizerbench-code-python-009",
+          "title": "python · case 9",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 91,
+          "sha256": "041cba09a1fbb9d9c4c70c385640ccdfe08e7dc40920f57ea6a6af419c0da9c0"
+        },
+        {
+          "id": "tokenizerbench-code-python-010",
+          "title": "python · case 10",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 161,
+          "sha256": "90743d749898334c091c8acf06db0d56dc0c3dda8aa8c3c4073c851bddf92f49"
+        },
+        {
+          "id": "tokenizerbench-code-python-011",
+          "title": "python · case 11",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 120,
+          "sha256": "af09f0576e4b932fc1ee10b5c5af73f1d4f2708d585d7a724df0e626b8d1a2c1"
+        },
+        {
+          "id": "tokenizerbench-code-python-012",
+          "title": "python · case 12",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 141,
+          "sha256": "faa76d06339eb9aaca83bb07b27f845a25ed5746d856f5952b23dc0758e65b02"
+        },
+        {
+          "id": "tokenizerbench-code-python-013",
+          "title": "python · case 13",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 117,
+          "sha256": "210f0d9fdf469aa6ae29f9aa1aa89e56b66cdc3501ef466df6b531ff369f3947"
+        },
+        {
+          "id": "tokenizerbench-code-python-014",
+          "title": "python · case 14",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 109,
+          "sha256": "8a339c863610d3cbcea42cd2ccfc4a0aacce7a505f102ad72c0deda8b3350e48"
+        },
+        {
+          "id": "tokenizerbench-code-python-015",
+          "title": "python · case 15",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 72,
+          "sha256": "a3985524c343b59adbff9b7e9ec8c5ab0564d88335ff518af9ba21a41cdc8b72"
+        },
+        {
+          "id": "tokenizerbench-code-python-016",
+          "title": "python · case 16",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 51,
+          "sha256": "652a089ac9f338149c5606bad287da4b0dfc5663ab5f1663d404e4a32237843b"
+        },
+        {
+          "id": "tokenizerbench-code-python-017",
+          "title": "python · case 17",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 71,
+          "sha256": "8ceb3bc3cc153e6bdc20b7bf09e1e18dfcf4241c85b08c3681a9c66281c54cc3"
+        },
+        {
+          "id": "tokenizerbench-code-python-018",
+          "title": "python · case 18",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 48,
+          "sha256": "45f8d839d5029a51dc8febf2085ff5ae47e5ff3c9e59973396516e7300e8be92"
+        },
+        {
+          "id": "tokenizerbench-code-python-019",
+          "title": "python · case 19",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 49,
+          "sha256": "844a2f17a7cf379f38ebafedc5d240ba7211a225b47d890938779d2d348b74b1"
+        },
+        {
+          "id": "tokenizerbench-code-python-020",
+          "title": "python · case 20",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 51,
+          "sha256": "4dedcc940243672d18720d1a1f8bc1ab0411f90e56f0c810465fefb88f6aa706"
+        }
+      ]
+    },
+    {
+      "id": "tokenizerbench-math",
+      "label": "TokenizerBench · math and science",
+      "path": "tracks/tokenizerbench-math.jsonl",
+      "records": 237,
+      "utf8Bytes": 8977,
+      "jsonlSha256": "0248a1aeca54eb37e26d0c984d1a3d0611d4603ab442e15d003a92ea295d74d6",
+      "groups": {
+        "algebra": 20,
+        "calculus": 20,
+        "physics": 24,
+        "maxwell_equations": 10,
+        "chemistry": 20,
+        "linear_algebra": 20,
+        "probability_stats": 20,
+        "information_theory": 15,
+        "quantum": 18,
+        "machine_learning": 20,
+        "symbols_edge_cases": 20,
+        "latex_notation": 15,
+        "mixed_extreme": 15
+      },
+      "samples": [
+        {
+          "id": "tokenizerbench-math-algebra-001",
+          "title": "algebra · case 1",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 15,
+          "sha256": "852f82c3b1852389d97025572ce0abbc87e7e40af871cf9a510f8d33739bf0d6"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-002",
+          "title": "algebra · case 2",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 37,
+          "sha256": "2567d6824e6caca5a8f5818ab25e7e1feb2bed1b71b62bc93ae560ffb8158cfb"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-003",
+          "title": "algebra · case 3",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 22,
+          "sha256": "2267726ee130e4733ad52f87ba23a41988c8f6cac0c28f60c65e225de8e7bccc"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-004",
+          "title": "algebra · case 4",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 17,
+          "sha256": "2515f9e8c0fed9475a3ef05c5a4acb979aff49560dad150c585b842303560291"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-005",
+          "title": "algebra · case 5",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 31,
+          "sha256": "4e342dd2c7d47bd0eb904ec65bc2f62c25bcbb1e3477ade5b8cf2b1f17749d82"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-006",
+          "title": "algebra · case 6",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 49,
+          "sha256": "fb444784b895f1460d280b75de3ba666b31e52b1a5616a109421d3ec86c15aae"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-007",
+          "title": "algebra · case 7",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 25,
+          "sha256": "a785e566c5e63c84112dd93440bd70a11639d1e795141f805e6d97f0c92f412f"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-008",
+          "title": "algebra · case 8",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 31,
+          "sha256": "0eb838fa96a5806bd880e6418016ceabe200bb1c7c97df486e4e93b4fb2ec717"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-009",
+          "title": "algebra · case 9",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 26,
+          "sha256": "3aa8ed4cf415fac2ac8d8e8bc87f835796fd0d912e3c9304f54d26faa53774ff"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-010",
+          "title": "algebra · case 10",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 28,
+          "sha256": "b736f8e5c6e000cb8812ddf5fa77927f55ef189153d0b1727154e2e221a0553e"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-011",
+          "title": "algebra · case 11",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 41,
+          "sha256": "3369a91027998b992c6b0d316b511972807f8aa2d6eeac30df98b8408c00475a"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-012",
+          "title": "algebra · case 12",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 24,
+          "sha256": "3af28d843e97bccb14f364312f47eedbea4de3ea0bee06990a5f9685ce19354c"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-013",
+          "title": "algebra · case 13",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 35,
+          "sha256": "f41932dbd078276f46cd3f4b706bee9b163e9723d4f3cda0cbfafeb23dfad140"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-014",
+          "title": "algebra · case 14",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 31,
+          "sha256": "1c389ec1fb098e69ba451ef8b9667c23d6cf57634ef16bfc3ca826d59bbcb1f3"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-015",
+          "title": "algebra · case 15",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 31,
+          "sha256": "73627b64c780672a4648487711ae7b36d4648c83dca32522b5649ba4c78be991"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-016",
+          "title": "algebra · case 16",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 48,
+          "sha256": "b7cf67ac57af98a0de7fc55a8effca4a03ee24a84a76aeef5d3e4f5898377b8f"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-017",
+          "title": "algebra · case 17",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 50,
+          "sha256": "3de2902a1a01f1f04a9cfcec0f943095f41900154106356e01fe173cfdcacd52"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-018",
+          "title": "algebra · case 18",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 35,
+          "sha256": "51b3600b91f1b2bccd0cb3a0b8d272be5d50233b91dc78bc98be8b065cdcc7bf"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-019",
+          "title": "algebra · case 19",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 53,
+          "sha256": "7562ba9ae9396fd65c1e273734a2d08c8017912b79f963bd34eed2c184ff1b9f"
+        },
+        {
+          "id": "tokenizerbench-math-algebra-020",
+          "title": "algebra · case 20",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 22,
+          "sha256": "fb6c1d82c472d64a496b9db704be67f5f0bd1f0fe009b2ba760cf4f85fc435e5"
+        }
+      ]
+    },
+    {
+      "id": "tokenizerbench-edge",
+      "label": "TokenizerBench · robustness",
+      "path": "tracks/tokenizerbench-edge.jsonl",
+      "records": 292,
+      "utf8Bytes": 9812,
+      "jsonlSha256": "f834d4f99f0910d6aee6ecfd3074eb6b2a194850328b248437a7bbca36eb191d",
+      "groups": {
+        "homoglyphs": 18,
+        "zero_width_characters": 15,
+        "rtl_ltr_mixing": 15,
+        "diacritics_and_special_latin": 22,
+        "whitespace_variants": 20,
+        "long_tokens": 19,
+        "repeated_characters": 15,
+        "emojis_and_unicode": 15,
+        "code_switching": 15,
+        "noisy_text": 15,
+        "mixed_scripts_single_token": 20,
+        "numerical_edge_cases": 22,
+        "special_punctuation": 22,
+        "control_characters": 16,
+        "fertility_test": 20,
+        "segmentation_boundaries": 23
+      },
+      "samples": [
+        {
+          "id": "tokenizerbench-edge-homoglyphs-001",
+          "title": "homoglyphs · case 1",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 39,
+          "sha256": "0c61a8db2a605c586a9003d8482269a335afd42fe826f915e12e41d7d527b553"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-002",
+          "title": "homoglyphs · case 2",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 39,
+          "sha256": "724092fc342c69b840124d0c5b74e4abf14927af86ab61c987539935467a42f7"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-003",
+          "title": "homoglyphs · case 3",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 38,
+          "sha256": "82e8063bc479cf8257454af3897411e0928ffb0d2f77f7c1d94c6243e88c2aff"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-004",
+          "title": "homoglyphs · case 4",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 41,
+          "sha256": "454b3665a29cf67cbcce19096999e4928239a04f67830cb2ea08e849dbb53171"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-005",
+          "title": "homoglyphs · case 5",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 57,
+          "sha256": "96e32489d8eb8f55006ae36f12d934cc51926f7b39b3489b9e83f6dd4cc679aa"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-006",
+          "title": "homoglyphs · case 6",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 47,
+          "sha256": "91172c266537440e11b0781d6d1cce6e39ceb82c9db0b1d795497ec4186bf217"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-007",
+          "title": "homoglyphs · case 7",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 32,
+          "sha256": "89d7e9773a87c021e6ea8a4ea02e18cc7a9548542fdc6ddbc5e1342d20a1fa3b"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-008",
+          "title": "homoglyphs · case 8",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 27,
+          "sha256": "a9e8ff25a207f1b0a09990500df60ee2515ef38605b1d3d10fefc355cd7331bd"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-009",
+          "title": "homoglyphs · case 9",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 38,
+          "sha256": "2d152c062645746f99e8c7430bf31d73db0a5ba1bc9d0a1a2629c1d0e0c6f89f"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-010",
+          "title": "homoglyphs · case 10",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 37,
+          "sha256": "fa7e599d7defae14f9ca18036fb5cbd3b72757b0ee23a149848180a8e99b2a3d"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-011",
+          "title": "homoglyphs · case 11",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 42,
+          "sha256": "c4217c191004c4ea2ccee8847e12441e59e5eae9fdcd327bfb922d6eac0a3c45"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-012",
+          "title": "homoglyphs · case 12",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 19,
+          "sha256": "3aac8213e25da307458511adf7439dfd2fc8029e143a43766f6ad663b160a5ec"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-013",
+          "title": "homoglyphs · case 13",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 19,
+          "sha256": "803b0584389cbd15bb05d28eb170c08b9d29a77d591fdb263a52d63f466f9db0"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-014",
+          "title": "homoglyphs · case 14",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 19,
+          "sha256": "a442d66da51bddbbdd1a3f01a67f4fbb300823ecf2be25b9bd4e9fa8e59f45a7"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-015",
+          "title": "homoglyphs · case 15",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 19,
+          "sha256": "62e4a51f0d9394955f590bfd4c413fa84bf1e819db5177439d7081b2345f6c85"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-016",
+          "title": "homoglyphs · case 16",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 33,
+          "sha256": "2af146ca31c69fe343a6410964a5e4186b347a9df70cc351da51c5b4281418fb"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-017",
+          "title": "homoglyphs · case 17",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 30,
+          "sha256": "6f0cd02fdf0ceb1a2a632c21b72c0e8d16a230a9caa6e355e57f4f3244fac370"
+        },
+        {
+          "id": "tokenizerbench-edge-homoglyphs-018",
+          "title": "homoglyphs · case 18",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 75,
+          "sha256": "83b680f1daec02fc0b4d4c85df677bb276f997dc9ddf59fbefd14840a6fd9817"
+        },
+        {
+          "id": "tokenizerbench-edge-zero_width_characters-001",
+          "title": "zero_width_characters · case 1",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 12,
+          "sha256": "da30a57891fd80e096d3e8983aaa06a45b5e5b384ed03afeaabb870afb595f48"
+        },
+        {
+          "id": "tokenizerbench-edge-zero_width_characters-002",
+          "title": "zero_width_characters · case 2",
+          "sourceUrl": "https://github.com/kitefishai/TokenizerBench/tree/c1d9c30fb671add9f79bcf810ef25c7c417c7f90",
+          "license": "MIT",
+          "revision": "0.2.0 · c8cd848101d1",
+          "utf8Bytes": 12,
+          "sha256": "a76dfb3fed17f1dd92c1025139e08f3fc6fc4a065650b0095d81c531727d14f4"
+        }
+      ]
+    }
+  ],
+  "privacy": {
+    "rawTextTrackedByGit": false,
+    "storedPublicMetadata": [
+      "title",
+      "source URL",
+      "license",
+      "revision",
+      "content hash"
+    ],
+    "notes": "The ignored local corpus contains public source text only. The checked-in lock contains hashes and attribution, not source bodies."
+  }
+}

@@ -1,0 +1,7 @@
+* text=auto eol=lf
+
+# Generated research artifacts are reviewable, but should not dominate GitHub diffs.
+benchmarks/*.report.json linguist-generated=true
+public/tokenizers/atlas-*/tokenizer.json linguist-generated=true
+scripts/tokenizer-protected-pieces.json linguist-generated=true
+scripts/tokenizer-*-protected-pieces.json linguist-generated=true

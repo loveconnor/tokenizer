@@ -1,26 +1,74 @@
 {
-  "name": "tokenizer",
+  "name": "tokenizer-lab",
   "version": "0.1.0",
+  "description": "An interactive showcase and reproducible research workbench for Connor Love's tokenizer.",
   "private": true,
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connorlove/tokenizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/connorlove/tokenizer/issues"
+  },
+  "homepage": "https://github.com/connorlove/tokenizer#readme",
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run lint && npm run typecheck && npm test && npm run test:trainer && npm run build",
+    "test": "vitest run",
+    "test:trainer": "python3 -m unittest scripts.tests.test_train_atlas_tokenizer",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "tokenizers:sync": "node scripts/sync-tokenizers.mjs",
+    "tokenizer:corpus": "python3 scripts/tokenizer_corpus.py",
+    "tokenizer:emoji": "python3 scripts/build_emoji_protected_pieces.py",
+    "tokenizer:urls": "python3 scripts/build_url_protected_pieces.py",
+    "tokenizer:prose": "python3 scripts/build_prose_protected_pieces.py",
+    "tokenizer:benchmark": "python3 scripts/benchmark_atlas_tokenizers.py",
+    "tokenizer:benchmark:corpus": "python3 scripts/benchmark_atlas_corpus.py",
+    "tokenizer:benchmark:build": "python3 scripts/build_tokenizer_benchmark.py",
+    "tokenizer:benchmark:run": "node scripts/run_tokenizer_benchmark.mjs",
+    "tokenizer:train": "python3 scripts/train_atlas_tokenizer.py"
   },
   "dependencies": {
+    "@base-ui-components/react": "^1.0.0-rc.0",
+    "@huggingface/transformers": "^4.2.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "js-tiktoken": "^1.0.21",
     "next": "16.2.11",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^3.6.0",
+    "tiktoken": "^1.0.22",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@playwright/test": "^1.61.1",
     "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^7.0.0",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.11",
+    "jsdom": "^29.1.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.1.10"
+  },
+  "overrides": {
+    "adm-zip": "0.6.0",
+    "postcss": "8.5.21",
+    "sharp": "0.35.3"
   }
 }
