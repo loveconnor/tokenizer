@@ -35,6 +35,8 @@ npm run dev
 
 The sync command records each downloaded source and revision in a local `revision.json` file. It downloads tokenizer definitions only, not model weights.
 
+Vercel deployments use `npm run build:vercel` so the same sync runs before the production build. Deploying with plain `next build` omits the ignored vendor directories and leaves those comparisons unavailable.
+
 ## Rebuild Atlas
 
 Install the pinned Python dependencies first:

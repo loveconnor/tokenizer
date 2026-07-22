@@ -13,6 +13,8 @@ Tokenizer Lab is a Next.js application whose comparison path runs in the browser
 
 Missing vendor assets fail independently and appear as unavailable measurements. Runtime model downloads are disabled, so a missing pin cannot silently resolve to a newer tokenizer.
 
+Vercel runs `npm run build:vercel` through the checked-in `vercel.json`. That command downloads the pinned vendor definitions before `next build`, making the generated files part of the deployment without committing third-party artifacts to Git.
+
 ## Ownership boundaries
 
 - `components/` owns rendered behavior and interaction state.

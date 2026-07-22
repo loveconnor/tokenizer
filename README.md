@@ -28,6 +28,10 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000). `tokenizers:sync` downloads only pinned tokenizer definitions, not model weights.
 
+## Deploy to Vercel
+
+The checked-in [`vercel.json`](vercel.json) runs `npm run build:vercel`, which downloads every pinned third-party tokenizer definition before the production build. Keep this build command enabled; a plain `next build` deployment includes only Connor's tokenizer and OpenAI `o200k_base`.
+
 ## Verify a change
 
 Run the fast project checks:
@@ -58,6 +62,7 @@ python3 -m pip install -r scripts/tokenizer-requirements.txt
 | Goal | Command |
 | --- | --- |
 | Download pinned third-party tokenizer definitions | `npm run tokenizers:sync` |
+| Build a complete Vercel deployment | `npm run build:vercel` |
 | Rebuild the Atlas training corpus | `npm run tokenizer:corpus` |
 | Rebuild protected emoji, URL, and prose pieces | `npm run tokenizer:emoji`, `npm run tokenizer:urls`, `npm run tokenizer:prose` |
 | Train the Atlas candidate | `npm run tokenizer:train` |
