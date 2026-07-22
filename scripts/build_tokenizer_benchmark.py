@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the pinned Atlas corpus benchmark without redistributing source text.
+"""Build the pinned Connor's Tokenizer corpus benchmark without redistributing source text.
 
 The generated corpus is ignored by git. A compact lock file records every
 source, revision, content hash, byte count, and public attribution needed to
@@ -30,7 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SOURCES = ROOT / "benchmarks" / "atlas-corpus-v3.sources.json"
 DEFAULT_OUTPUT = ROOT / "data" / "tokenizer-benchmark"
 DEFAULT_LOCK = ROOT / "benchmarks" / "atlas-corpus-v3.lock.json"
-USER_AGENT = "TokenAtlasBenchmark/3.0 (+https://github.com/connorlove/tokenizer)"
+USER_AGENT = "ConnorsTokenizerBenchmark/3.0 (+https://github.com/loveconnor/tokenizer)"
 TIMEOUT_SECONDS = 120
 MAX_SOURCE_BYTES = 24 * 1024 * 1024
 

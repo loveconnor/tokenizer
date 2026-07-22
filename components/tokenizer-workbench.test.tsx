@@ -31,7 +31,9 @@ describe("TokenizerWorkbench", () => {
 
   it("loads examples without persisting the specimen", () => {
     render(<TokenizerWorkbench />)
+    expect(screen.getByRole("heading", { level: 1, name: "Connor’s Tokenizer" })).toBeVisible()
     expect(screen.getByRole("heading", { level: 3, name: "Connor’s Tokenizer" })).toBeVisible()
+    expect(document.body).not.toHaveTextContent(/Atlas/i)
     const openAiHeading = screen.getByRole("heading", { name: "OpenAI" })
     const openAiMark = openAiHeading.closest(".lab-title")?.querySelector(".lab-mark")
     expect(openAiMark?.querySelector('img[src="/lab-marks/openai.svg"]')).toBeTruthy()
@@ -39,11 +41,11 @@ describe("TokenizerWorkbench", () => {
     expect(document.querySelector('[data-lab="atlas"]')).toHaveTextContent("CL")
     expect(screen.getByRole("link", { name: "Source code" })).toHaveAttribute(
       "href",
-      "https://github.com/connorlove/tokenizer",
+      "https://github.com/loveconnor/tokenizer",
     )
     fireEvent.click(screen.getByRole("button", { name: "Multilingual" }))
     expect((screen.getByLabelText("Text to compare") as HTMLTextAreaElement).value).toContain("你好世界")
-    expect(localStorage.getItem("tokenizer-lab:text")).toBeNull()
+    expect(localStorage.getItem("connors-tokenizer:text")).toBeNull()
   })
 
   it("dispatches the initial specimen once to each worker", () => {
@@ -57,7 +59,7 @@ describe("TokenizerWorkbench", () => {
     render(<TokenizerWorkbench />)
     expect(screen.queryByText("Hosted providers")).not.toBeInTheDocument()
     expect(screen.queryByRole("button", { name: /hosted providers/i })).not.toBeInTheDocument()
-    expect(localStorage.getItem("tokenizer-lab:hosted-consent")).toBeNull()
+    expect(localStorage.getItem("connors-tokenizer:hosted-consent")).toBeNull()
   })
 
   it("switches to the fixed benchmark suite without changing the specimen", () => {
@@ -71,6 +73,7 @@ describe("TokenizerWorkbench", () => {
     expect(benchmarkTab).toHaveAttribute("aria-selected", "true")
     expect(screen.queryByLabelText("Text to compare")).not.toBeInTheDocument()
     expect(screen.getByRole("heading", { name: "Benchmark corpus" })).toBeVisible()
+    expect(document.body).not.toHaveTextContent(/Atlas/i)
     expect(screen.getByText("Source inventory")).toBeVisible()
     expect(screen.getByRole("heading", { name: "Wikipedia" })).toBeVisible()
     expect(screen.getByRole("link", { name: "Pride and Prejudice" })).toBeVisible()

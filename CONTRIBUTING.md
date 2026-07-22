@@ -1,6 +1,6 @@
-# Contributing to Tokenizer Lab
+# Contributing to Connor's Tokenizer
 
-Tokenizer Lab welcomes focused fixes, tests, documentation, reproducibility improvements, and well-supported tokenizer research.
+Connor's Tokenizer welcomes focused fixes, tests, documentation, reproducibility improvements, and well-supported tokenizer research.
 
 ## Before you start
 
@@ -42,7 +42,7 @@ Add or update the lowest-level test that proves the behavior you changed. A gree
 ## Generated and downloaded files
 
 - Do not commit `data/`, `.next/`, `test-results/`, or downloaded vendor tokenizer directories.
-- Commit Atlas tokenizer artifacts only when the generating inputs, commands, hashes, and benchmark evidence are part of the same change.
+- Commit Connor's Tokenizer artifacts only when the generating inputs, commands, hashes, and benchmark evidence are part of the same change.
 - Keep source revisions and SHA-256 values pinned. Do not replace a pin with a moving branch or `latest` tag.
 - Record the source, license, selection method, and privacy treatment for new corpus material.
 - Review large JSON changes deliberately; files marked as generated in `.gitattributes` still require provenance and reproducibility evidence.

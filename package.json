@@ -1,17 +1,17 @@
 {
-  "name": "tokenizer-lab",
+  "name": "connors-tokenizer",
   "version": "0.1.0",
-  "description": "An interactive showcase and reproducible research workbench for Connor Love's tokenizer.",
+  "description": "An interactive showcase and reproducible research workbench for Connor's Tokenizer.",
   "private": true,
   "license": "AGPL-3.0-only",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/connorlove/tokenizer.git"
+    "url": "git+https://github.com/loveconnor/tokenizer.git"
   },
   "bugs": {
-    "url": "https://github.com/connorlove/tokenizer/issues"
+    "url": "https://github.com/loveconnor/tokenizer/issues"
   },
-  "homepage": "https://github.com/connorlove/tokenizer#readme",
+  "homepage": "https://github.com/loveconnor/tokenizer#readme",
   "engines": {
     "node": ">=20.9.0"
   },

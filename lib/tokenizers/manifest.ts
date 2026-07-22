@@ -23,7 +23,7 @@ export const TOKENIZER_MANIFEST: readonly TokenizerManifestEntry[] = [
     tokenizerId: "byte-lossless Unigram · 195,124 vocabulary",
     mode: "local",
     fidelity: "research_candidate",
-    sourceUrl: "/tokenizers/atlas-unigram-v3/revision.json",
+    sourceUrl: "https://github.com/loveconnor/tokenizer#readme",
     revision: "production-corpus candidate",
     assetDirectory: "atlas-unigram-v3",
     accent: "#b45309",

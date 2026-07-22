@@ -6,7 +6,7 @@
 | --- | --- |
 | Research mode | Rapid evidence review, repository audit, preliminary diagnostic experiment, and preregisterable R&D plan |
 | Review date | 2026-07-21 |
-| Decision owner | Tokenizer Lab project owner |
+| Decision owner | Connor's Tokenizer project owner |
 | Primary question | Which tokenizer design is the strongest candidate for outperforming all nine pinned comparison baselines under matched model-training conditions? |
 | Scope | General-purpose tokenization for a decoder-only language model covering multilingual text, code, numbers, structured data, and noisy user input |
 | Comparison set | Nine pinned systems in `lib/tokenizers/manifest.ts` |

@@ -1,6 +1,6 @@
 # Third-party notices
 
-Tokenizer Lab combines original work with dependencies, downloaded tokenizer definitions, public research fixtures, and source corpora. The project license does not replace the terms attached to third-party material.
+Connor's Tokenizer combines original work with dependencies, downloaded tokenizer definitions, public research fixtures, and source corpora. The project license does not replace the terms attached to third-party material.
 
 This inventory is provided to make provenance review possible. It is not a legal opinion or a substitute for reading the linked terms before redistribution.
 
@@ -37,7 +37,7 @@ Material referenced by those manifests includes FineWeb and Common Crawl terms, 
 
 ## Names and marks
 
-Company, model, and product names identify the compared tokenizer sources. They remain the property of their respective owners. Tokenizer Lab is not endorsed by those organizations.
+Company, model, and product names identify the compared tokenizer sources. They remain the property of their respective owners. Connor's Tokenizer is not endorsed by those organizations.
 
 The monochrome lab SVGs in `public/lab-marks/` are derived from
 [`@lobehub/icons-static-svg` 1.94.0](https://github.com/lobehub/lobe-icons),

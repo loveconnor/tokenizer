@@ -2,7 +2,7 @@
 
 ## Supported version
 
-Until Tokenizer Lab publishes versioned releases, security fixes target the latest commit on `main`. Older commits and local modifications are not supported versions.
+Until Connor's Tokenizer publishes versioned releases, security fixes target the latest commit on `main`. Older commits and local modifications are not supported versions.
 
 ## Report a vulnerability privately
 

@@ -35,7 +35,7 @@ class CorpusPreparationTests(unittest.TestCase):
         result.encode("utf-8", errors="strict")
 
 
-class AtlasTrainerTests(unittest.TestCase):
+class ConnorsTokenizerTrainerTests(unittest.TestCase):
     def test_byte_symbol_mapping_round_trips_every_byte(self):
         payload = bytes(range(256))
         self.assertEqual(symbols_to_bytes(bytes_to_symbols(payload)), payload)

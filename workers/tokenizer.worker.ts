@@ -3,7 +3,7 @@
 import { charactersPerToken, createPiece } from "@/lib/tokenizers/calculations"
 import { measureTokenizerBenchmarks, type EncodeText } from "@/lib/tokenizers/benchmarks"
 import { manifestByLab } from "@/lib/tokenizers/manifest"
-import { AtlasUnigramTokenizer } from "@/lib/tokenizers/atlas-unigram"
+import { ConnorsTokenizer } from "@/lib/tokenizers/atlas-unigram"
 import type { LabId, TokenizerResult } from "@/lib/tokenizers/types"
 
 type WorkerRequest = { id: number; text: string }
@@ -41,7 +41,7 @@ async function tokenize(lab: LabId, text: string): Promise<TokenizerResult> {
   const manifest = manifestByLab[lab]
   if (!manifest.assetDirectory) throw new Error("No local asset directory")
 
-  if (lab === "atlas") return tokenizeAtlas(text)
+  if (lab === "atlas") return tokenizeConnorsTokenizer(text)
 
   let tokenizerPromise = lab === "anthropic" ? anthropicEncodingPromise : tokenizerCache.get(lab)
   if (!tokenizerPromise) {
@@ -78,14 +78,14 @@ async function tokenize(lab: LabId, text: string): Promise<TokenizerResult> {
   }
 }
 
-async function tokenizeAtlas(text: string): Promise<TokenizerResult> {
+async function tokenizeConnorsTokenizer(text: string): Promise<TokenizerResult> {
   const manifest = manifestByLab.atlas
   let tokenizerPromise = tokenizerCache.get("atlas")
   if (!tokenizerPromise) {
-    tokenizerPromise = AtlasUnigramTokenizer.load()
+    tokenizerPromise = ConnorsTokenizer.load()
     tokenizerCache.set("atlas", tokenizerPromise)
   }
-  const tokenizer = await tokenizerPromise as AtlasUnigramTokenizer
+  const tokenizer = await tokenizerPromise as ConnorsTokenizer
   const encoded = tokenizer.encodeDetailed(text)
   const encode = (value: string) => tokenizer.encode(value)
   const pieces = encoded.slice(0, 200).map(({ id, bytes }) => {

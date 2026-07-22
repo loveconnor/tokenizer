@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test"
 
 test("compares a preset with local tokenizers", async ({ page }) => {
   await page.goto("/")
-  await expect(page.getByRole("heading", { level: 1, name: "Tokenizer Lab" })).toBeVisible()
+  await expect(page.getByRole("heading", { level: 1, name: "Connor’s Tokenizer" })).toBeVisible()
   await expect(page.getByRole("tab", { name: "Compare text" })).toHaveAttribute("aria-selected", "true")
   const openAi = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "OpenAI" }) })
   await expect(openAi.locator(".lab-mark")).toHaveText("OA")
@@ -78,5 +78,5 @@ test("does not expose hosted-provider transmission", async ({ page }) => {
   await expect(page.getByText("10 / 10 measured")).toBeVisible({ timeout: 30_000 })
   await expect(page.getByText("Hosted providers")).toHaveCount(0)
   await expect(page.getByRole("button", { name: /hosted providers/i })).toHaveCount(0)
-  expect(await page.evaluate(() => localStorage.getItem("tokenizer-lab:hosted-consent"))).toBeNull()
+  expect(await page.evaluate(() => localStorage.getItem("connors-tokenizer:hosted-consent"))).toBeNull()
 })

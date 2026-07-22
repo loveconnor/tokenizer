@@ -2449,7 +2449,7 @@
         "sourceUrl": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/tree/9bb295ddab0e05d785b879661af7260fed5140fc",
         "maxUtf8Bytes": 160000,
         "license": "ODC-By-1.0; upstream Common Crawl terms apply",
-        "heldOutNote": "Uses the first served rows; Atlas training used row groups 359-365 from the pinned shard and document hashes are checked for overlap."
+        "heldOutNote": "Uses the first served rows; Connor's Tokenizer training used row groups 359-365 from the pinned shard and document hashes are checked for overlap."
       },
       "stackOverflow": {
         "license": "CC BY-SA 4.0",
@@ -2635,16 +2635,16 @@
       "sourceUrl": "https://aclanthology.org/2026.acl-srw.18/"
     },
     "tokenMonster": {
-      "status": "external historical evidence only; not an Atlas result",
+      "status": "external historical evidence only; not a result for Connor's Tokenizer",
       "sourceUrl": "https://github.com/alasdairforsythe/tokenmonster/blob/main/benchmark/pretrain.md",
-      "note": "The author reports pretraining 16 models with different tokenizers. A comparable Atlas claim requires matched model pretraining and is out of scope for tokenizer-only measurement."
+      "note": "The author reports pretraining 16 models with different tokenizers. A comparable Connor's Tokenizer claim requires matched model pretraining and is out of scope for tokenizer-only measurement."
     }
   },
   "systems": [
     {
       "lab": "atlas",
-      "label": "Connor Love",
-      "model": "Atlas Unigram v3",
+      "label": "Connor's Tokenizer",
+      "model": "Byte-lossless Unigram v3",
       "fidelity": "research candidate",
       "revision": "960dc62716e49b77f54c0a98e62393d34c5167d5f20bce1e625c80c18772efff",
       "vocabularySize": 195124,

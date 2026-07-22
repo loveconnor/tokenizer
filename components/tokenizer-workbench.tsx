@@ -139,8 +139,8 @@ export function TokenizerWorkbench() {
         <header className="lab-header">
           <div className="lab-title-row">
             <div>
-              <h1>Tokenizer Lab</h1>
-              <p className="lab-deck">{view === "compare" ? "Explore Connor Love’s tokenizer alongside nine established tokenizer baselines." : "Evaluate Connor Love’s tokenizer across compression, multilingual, robustness, and throughput benchmarks."}</p>
+              <h1>Connor’s Tokenizer</h1>
+              <p className="lab-deck">{view === "compare" ? "Compare Connor’s byte-lossless Unigram tokenizer with nine established tokenizer baselines." : "Evaluate Connor’s Tokenizer across compression, multilingual, robustness, and throughput benchmarks."}</p>
             </div>
             <div className="lab-index" aria-label="Ten tokenizers compared"><strong>10</strong><span>tokenizers<br />compared</span></div>
           </div>
@@ -226,11 +226,11 @@ export function TokenizerWorkbench() {
         </div>}
 
         <footer className="project-footer">
-          <p>Tokenizer Lab is free software licensed under GNU AGPL v3.0 only.</p>
+          <p>Connor’s Tokenizer is free software licensed under GNU AGPL v3.0 only.</p>
           <nav aria-label="Project information">
-            <a href="https://github.com/connorlove/tokenizer">Source code</a>
-            <a href="https://github.com/connorlove/tokenizer/blob/main/LICENSE">License</a>
-            <a href="https://github.com/connorlove/tokenizer/blob/main/THIRD_PARTY_NOTICES.md">Third-party notices</a>
+            <a href="https://github.com/loveconnor/tokenizer">Source code</a>
+            <a href="https://github.com/loveconnor/tokenizer/blob/main/LICENSE">License</a>
+            <a href="https://github.com/loveconnor/tokenizer/blob/main/THIRD_PARTY_NOTICES.md">Third-party notices</a>
           </nav>
         </footer>
       </main>

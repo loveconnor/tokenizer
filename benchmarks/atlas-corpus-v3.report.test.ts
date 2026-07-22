@@ -25,7 +25,7 @@ const REQUIRED_TRACKS = [
   "tokenizerbench-edge",
 ] as const
 
-describe("Atlas corpus v3 report", () => {
+describe("Connor's Tokenizer corpus v3 report", () => {
   it("matches the locked corpus and required source tracks", () => {
     expect(report.corpus.corpusSha256).toBe(lock.corpusSha256)
     expect(report.corpus.tracks.map((track) => track.id)).toEqual(REQUIRED_TRACKS)

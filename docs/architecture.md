@@ -1,6 +1,6 @@
 # Architecture
 
-Tokenizer Lab is a Next.js application whose comparison path runs in the browser. It has no application database, account system, or server-side tokenizer proxy.
+Connor's Tokenizer is a Next.js application whose comparison path runs in the browser. It has no application database, account system, or server-side tokenizer proxy.
 
 ## Runtime flow
 
@@ -18,11 +18,11 @@ Vercel runs `npm run build:vercel` through the checked-in `vercel.json`. That co
 ## Ownership boundaries
 
 - `components/` owns rendered behavior and interaction state.
-- `lib/tokenizers/` owns tokenizer contracts, Atlas encoding/decoding, manifest metadata, and metric calculations.
+- `lib/tokenizers/` owns tokenizer contracts, Connor's Tokenizer encoding/decoding, manifest metadata, and metric calculations.
 - `workers/` owns browser execution and artifact loading.
 - `scripts/` owns network downloads, corpus construction, training, and benchmark generation.
 - `benchmarks/` owns locked aggregate evidence and its integrity test.
-- `public/tokenizers/atlas-*` contains original Atlas artifacts. Other tokenizer directories are local downloads and are excluded from Git.
+- `public/tokenizers/atlas-*` contains original Connor's Tokenizer artifacts under their legacy artifact slugs. Other tokenizer directories are local downloads and are excluded from Git.
 
 ## Data and trust boundaries
 

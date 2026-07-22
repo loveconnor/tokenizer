@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Train and export Atlas, a byte-lossless parity-aware Unigram tokenizer.
+"""Train and export Connor's Tokenizer, a byte-lossless parity-aware Unigram tokenizer.
 
 The native SentencePiece model is an intermediate candidate generator. The
 browser artifact contains explicit byte strings and is decoded without Unicode

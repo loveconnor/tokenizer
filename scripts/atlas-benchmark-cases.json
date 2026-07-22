@@ -67,7 +67,7 @@
   {
     "name": "code-javascript",
     "category": "code",
-    "text": "const specimen = {\n  lab: \"Tokenizer Lab\",\n  ready: true,\n  values: [13, 21, 34]\n};"
+    "text": "const specimen = {\n  lab: \"Connor's Tokenizer\",\n  ready: true,\n  values: [13, 21, 34]\n};"
   },
   {
     "name": "code-python",

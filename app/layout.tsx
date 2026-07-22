@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Tokenizer Lab — Connor Love's tokenizer",
-  description: "Explore Connor Love's byte-lossless Unigram tokenizer alongside nine browser-local tokenizer baselines.",
+  title: "Connor's Tokenizer",
+  description: "Compare Connor's byte-lossless Unigram tokenizer with nine browser-local tokenizer baselines.",
 };
 
 export default function RootLayout({

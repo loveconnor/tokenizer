@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare Atlas artifacts on the checked-in improvement regression suite."""
+"""Compare Connor's Tokenizer artifacts on the checked-in improvement regression suite."""
 
 from __future__ import annotations
 

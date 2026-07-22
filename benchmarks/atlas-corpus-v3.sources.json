@@ -26,7 +26,7 @@
     "sourceUrl": "https://huggingface.co/datasets/HuggingFaceFW/fineweb/tree/9bb295ddab0e05d785b879661af7260fed5140fc",
     "maxUtf8Bytes": 160000,
     "license": "ODC-By-1.0; upstream Common Crawl terms apply",
-    "heldOutNote": "Uses the first served rows; Atlas training used row groups 359-365 from the pinned shard and document hashes are checked for overlap."
+    "heldOutNote": "Uses the first served rows; Connor's Tokenizer training used row groups 359-365 from the pinned shard and document hashes are checked for overlap."
   },
   "stackOverflow": {
     "license": "CC BY-SA 4.0",

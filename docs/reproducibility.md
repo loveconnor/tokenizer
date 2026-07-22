@@ -1,6 +1,6 @@
 # Reproducibility
 
-Tokenizer Lab separates source-controlled evidence from downloaded or generated working data.
+Connor's Tokenizer separates source-controlled evidence from downloaded or generated working data.
 
 ## Tracked inputs and evidence
 
@@ -8,7 +8,7 @@ Tokenizer Lab separates source-controlled evidence from downloaded or generated 
 - training source definitions in `scripts/tokenizer-corpus-sources.json`;
 - corpus lock files and protected-piece manifests in `scripts/`;
 - benchmark sources, hashes, and aggregate results in `benchmarks/`;
-- Atlas browser artifacts and their revision metadata in `public/tokenizers/atlas-*`;
+- Connor's Tokenizer browser artifacts and their revision metadata in `public/tokenizers/atlas-*`;
 - exact JavaScript and Python dependency versions in `package-lock.json` and `scripts/tokenizer-requirements.txt`.
 
 ## Local-only outputs
@@ -37,7 +37,7 @@ The sync command records each downloaded source and revision in a local `revisio
 
 Vercel deployments use `npm run build:vercel` so the same sync runs before the production build. Deploying with plain `next build` omits the ignored vendor directories and leaves those comparisons unavailable.
 
-## Rebuild Atlas
+## Rebuild Connor's Tokenizer
 
 Install the pinned Python dependencies first:
 
@@ -55,7 +55,7 @@ npm run tokenizer:corpus
 npm run tokenizer:train
 ```
 
-Review the resulting artifact hashes and benchmark changes before replacing a tracked Atlas version. A successful build alone does not justify a new candidate.
+Review the resulting artifact hashes and benchmark changes before replacing a tracked Connor's Tokenizer version. A successful build alone does not justify a new candidate.
 
 ## Rebuild the evaluation report
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare Atlas artifacts on deterministic slices of every locked corpus group."""
+"""Compare Connor's Tokenizer artifacts on deterministic slices of every locked corpus group."""
 
 from __future__ import annotations
 

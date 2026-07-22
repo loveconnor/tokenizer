@@ -20,7 +20,7 @@ const MARKDOWN_PATH = path.join(ROOT, "docs", "atlas-corpus-v3-benchmark.md")
 const JOINER = "\n\n"
 
 const SYSTEMS = [
-  { lab: "atlas", label: "Connor Love", model: "Atlas Unigram v3", kind: "atlas", asset: "atlas-unigram-v3", fidelity: "research candidate" },
+  { lab: "atlas", label: "Connor's Tokenizer", model: "Byte-lossless Unigram v3", kind: "atlas", asset: "atlas-unigram-v3", fidelity: "research candidate" },
   { lab: "openai", label: "OpenAI", model: "o200k_base", kind: "openai", fidelity: "official tokenizer" },
   { lab: "anthropic", label: "Anthropic", model: "Anthropic 2023 legacy proxy", kind: "anthropic", asset: "anthropic-legacy", fidelity: "official legacy proxy" },
   { lab: "google", label: "Google", model: "Gemma 4 tokenizer (not Gemini)", kind: "huggingface", asset: "gemma-4", fidelity: "official open-model tokenizer" },
@@ -53,7 +53,7 @@ function loadTracks(lock) {
   return tracks
 }
 
-class AtlasTokenizer {
+class ConnorsTokenizer {
   constructor(artifact) {
     this.artifact = artifact
     this.maximumPieceBytes = artifact.limits.maxPieceBytes
@@ -112,7 +112,7 @@ class AtlasTokenizer {
         }
       }
     }
-    if (!Number.isFinite(scores[payload.length])) throw new Error("Atlas cannot encode benchmark record")
+    if (!Number.isFinite(scores[payload.length])) throw new Error("Connor's Tokenizer cannot encode benchmark record")
     if (!includeIds) return counts[payload.length]
     const ids = []
     for (let cursor = payload.length; cursor > 0; cursor = previous[cursor]) ids.push(tokenIds[cursor])
@@ -124,7 +124,7 @@ class AtlasTokenizer {
     const bytes = []
     for (const id of ids) {
       const piece = this.pieces.get(id)
-      if (!piece) throw new Error(`Unknown Atlas token ${id}`)
+      if (!piece) throw new Error(`Unknown Connor's Tokenizer token ${id}`)
       bytes.push(...piece)
     }
     return new TextDecoder("utf-8", { fatal: true, ignoreBOM: true }).decode(Uint8Array.from(bytes))
@@ -135,7 +135,7 @@ async function loadTokenizer(system) {
   if (system.kind === "atlas") {
     const artifactPath = path.join(ROOT, "public", "tokenizers", system.asset, "tokenizer.json")
     const artifactPayload = fs.readFileSync(artifactPath)
-    const tokenizer = new AtlasTokenizer(JSON.parse(artifactPayload))
+    const tokenizer = new ConnorsTokenizer(JSON.parse(artifactPayload))
     return { tokenizer, revision: sha256(artifactPayload), vocabularySize: tokenizer.artifact.vocabulary.length }
   }
   if (system.kind === "openai") {
@@ -393,7 +393,7 @@ async function evaluateSystem(system, tracks, allUnique) {
 
 function renderMarkdown(report) {
   const lines = [
-    "# Atlas corpus benchmark v3",
+    "# Connor's Tokenizer corpus benchmark v3",
     "",
     `Generated ${report.generatedAt} from corpus \`${report.corpus.corpusSha256}\`.`,
     "",
@@ -420,7 +420,7 @@ function renderMarkdown(report) {
     "",
     "- TokenizerBench 0.2.0 is used as a pinned fixture set. Its published package entry point is broken; the verified wheel's four full data modules are loaded directly.",
     "- TokLens metrics are reproduced on its Wikipedia 20231101 recipe. This report does not reproduce TokLens's downstream correlation study or claim causation.",
-    "- TokenMonster's 16-model experiment is cited as external historical evidence only. Atlas has not been trained into matched language models, so no TokenMonster-style downstream result is reported for it.",
+    "- TokenMonster's 16-model experiment is cited as external historical evidence only. Connor's Tokenizer has not been trained into matched language models, so no TokenMonster-style downstream result is reported for it.",
     "- Throughput is encode-only and machine-specific. Compare only values from this single run and use the environment recorded in the JSON report.",
     "- Google is represented by Gemma, not Gemini. Anthropic and xAI are legacy open-tokenizer proxies. These identities are not current proprietary production tokenizers.",
     "",
@@ -462,9 +462,9 @@ async function main() {
       tokenizerBench: { status: "executed", version: sources.tokenizerBench.version, sourceUrl: sources.tokenizerBench.sourceUrl },
       tokLens: { status: "metrics reproduced; downstream correlation not rerun", sourceUrl: sources.tokLens.paperUrl },
       tokenMonster: {
-        status: "external historical evidence only; not an Atlas result",
+        status: "external historical evidence only; not a result for Connor's Tokenizer",
         sourceUrl: "https://github.com/alasdairforsythe/tokenmonster/blob/main/benchmark/pretrain.md",
-        note: "The author reports pretraining 16 models with different tokenizers. A comparable Atlas claim requires matched model pretraining and is out of scope for tokenizer-only measurement.",
+        note: "The author reports pretraining 16 models with different tokenizers. A comparable Connor's Tokenizer claim requires matched model pretraining and is out of scope for tokenizer-only measurement.",
       },
     },
     systems,

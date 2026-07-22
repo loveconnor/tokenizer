@@ -2,7 +2,7 @@
 
 This directory contains two different classes of files.
 
-## Tracked Atlas artifacts
+## Tracked Connor's Tokenizer artifacts
 
 `atlas-unigram-v1`, `atlas-unigram-v2`, and `atlas-unigram-v3` are generated project artifacts. V3 is the active research candidate; v1 and v2 remain as comparison and rollback evidence.
 
