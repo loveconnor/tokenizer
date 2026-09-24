@@ -1,6 +1,6 @@
 # Connor's Tokenizer
 
-Connor's Tokenizer is an interactive, browser-based showcase for Connor Love's byte-lossless Unigram tokenizer. It compares the tokenizer's token counts, boundaries, corpus compression, multilingual metrics, robustness, and throughput with nine established tokenizer baselines.
+Connor's Tokenizer is an interactive, browser-based showcase for Connor Love's byte-lossless Unigram tokenizer. It compares the tokenizer's token counts, boundaries, corpus compression, fixed-budget context capacity, multilingual metrics, robustness, and throughput with nine established tokenizer baselines.
 
 The comparison uses pinned tokenizer definitions from nine AI labs alongside Connor's experimental research candidate. All interactive tokenization runs locally in a Web Worker; entered text is not sent to a provider.
 
@@ -9,6 +9,7 @@ The comparison uses pinned tokenizer definitions from nine AI labs alongside Con
 ## What is included
 
 - An editable side-by-side tokenizer comparison.
+- A fixed-budget context-capacity comparison on three locked source tracks.
 - A locked 2,116-record benchmark with source revisions, licenses, hashes, and aggregate results.
 - Reproducible scripts for tokenizer assets, corpora, protected pieces, training, and benchmarks.
 - Unit, component, Python trainer, and browser end-to-end tests.
@@ -68,6 +69,7 @@ python3 -m pip install -r scripts/tokenizer-requirements.txt
 | Train Connor's Tokenizer candidate | `npm run tokenizer:train` |
 | Rebuild the locked evaluation corpus | `npm run tokenizer:benchmark:build` |
 | Run the ten-tokenizer benchmark | `npm run tokenizer:benchmark:run` |
+| Measure fixed-budget context capacity | `npm run tokenizer:benchmark:context` |
 
 Downloaded corpora, intermediate models, and third-party tokenizer files are intentionally ignored by Git. The tracked manifests and lock files pin their sources and revisions.
 

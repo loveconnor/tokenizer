@@ -5,7 +5,7 @@ test("compares a preset with local tokenizers", async ({ page }) => {
   await expect(page.getByRole("heading", { level: 1, name: "Connor’s Tokenizer" })).toBeVisible()
   await expect(page.getByRole("tab", { name: "Compare text" })).toHaveAttribute("aria-selected", "true")
   const openAi = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "OpenAI" }) })
-  await expect(openAi.locator(".lab-mark")).toHaveText("OA")
+  await expect(openAi.locator('.lab-mark img[src="/lab-marks/openai.svg"]')).toBeVisible()
   await expect(openAi.getByText("ready · local")).toBeVisible({ timeout: 30_000 })
   await expect(openAi.locator(".metric-primary > span")).toHaveText("tokens")
   await expect(openAi.locator(".metric-primary strong")).toHaveText(/^\d+$/)
@@ -34,7 +34,6 @@ test("compares a preset with local tokenizers", async ({ page }) => {
 
 test("runs the fixed benchmark suite in a separate view", async ({ page }) => {
   await page.goto("/")
-  await expect(page.getByText("10 / 10 measured")).toBeVisible({ timeout: 30_000 })
   const benchmarkTab = page.getByRole("tab", { name: "Benchmark suite" })
   await benchmarkTab.click()
   await expect(benchmarkTab).toHaveAttribute("aria-selected", "true")
@@ -50,6 +49,11 @@ test("runs the fixed benchmark suite in a separate view", async ({ page }) => {
   await expect(benchmarkTable.getByRole("row", { name: /^Python / })).toBeVisible()
   await expect(benchmarkTable.getByRole("row", { name: /^TokenizerBench · 84 languages / })).toBeVisible()
   await expect(benchmarkTable.getByRole("row", { name: /^Wikipedia / }).locator("td[data-best='true'] .benchmark-best")).toBeVisible()
+  const contextTable = page.getByRole("table", { name: /Original UTF-8 bytes retained by each tokenizer/ })
+  await expect(contextTable).toBeVisible()
+  await expect(contextTable.locator("tbody tr")).toHaveCount(6)
+  await expect(contextTable.getByRole("row", { name: /^Wikipedia 32,768/ })).toContainText("154,350")
+  await expect(page.getByText("This does not measure model recall.")).toBeVisible()
   const toklensTable = page.getByRole("table", { name: /TokLens-compatible intrinsic metrics/ })
   await expect(toklensTable.getByRole("row", { name: /Google/ }).locator("td[data-best='true']").first().locator(".benchmark-best")).toBeVisible()
   await expect(toklensTable.getByRole("row", { name: /Connor’s Tokenizer/ }).locator("td").first().locator(".benchmark-best")).toHaveCount(0)

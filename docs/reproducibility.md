@@ -62,10 +62,13 @@ Review the resulting artifact hashes and benchmark changes before replacing a tr
 ```bash
 npm run tokenizer:benchmark:build
 npm run tokenizer:benchmark:run
+npm run tokenizer:benchmark:context
 npm test
 ```
 
 The builder downloads bounded source samples, verifies the pinned TokenizerBench wheel, reconstructs the evaluation corpus, and writes local tracks. The runner checks the lock before producing aggregate results. The Vitest integrity test verifies the corpus hash, required tracks, and complete ten-system measurements.
+
+The context-capacity runner uses three locked tracks and the same ten tokenizer definitions. It reports the original trailing UTF-8 bytes retained under 32,768- and 131,072-token budgets in `benchmarks/context-capacity-v1.report.json` and `docs/context-capacity-v1-benchmark.md`. These are hypothetical raw-text budgets; the result does not measure model recall.
 
 ## Known limits
 

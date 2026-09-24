@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "protocolId": "context-capacity-v1",
+  "generatedAt": "2026-09-24T22:39:26.627Z",
+  "corpusSha256": "2dbf6ba9ce27a151446b91506cc9290d0540734bb17e5b1a6a21f667be7bae0f",
+  "budgets": [
+    32768,
+    131072
+  ],
+  "scenarios": [
+    {
+      "id": "wikipedia",
+      "label": "Wikipedia",
+      "records": 58,
+      "utf8Bytes": 1941193,
+      "jsonlSha256": "c7322e6ee75cb127220a72cc42667d947a891872e1197dbc7443f1389f7ddcb8"
+    },
+    {
+      "id": "github-repositories",
+      "label": "GitHub repositories",
+      "records": 10,
+      "utf8Bytes": 511605,
+      "jsonlSha256": "b9bec55c74c25ea31fd5850485f38230f491dfb7958b0b0b6d071704f0529ff3"
+    },
+    {
+      "id": "books",
+      "label": "Books",
+      "records": 3,
+      "utf8Bytes": 234972,
+      "jsonlSha256": "559fcfc4d2837fe68e24fefbcab5a4099be97cc1db78200615f1b67ef4d949ec"
+    }
+  ],
+  "systems": [
+    {
+      "lab": "atlas",
+      "label": "Connor's Tokenizer",
+      "model": "Byte-lossless Unigram v3",
+      "fidelity": "research candidate",
+      "revision": "960dc62716e49b77f54c0a98e62393d34c5167d5f20bce1e625c80c18772efff",
+      "scenarios": {
+        "wikipedia": {
+          "32768": {
+            "retainedBytes": 154350,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 663530,
+            "retainedTokens": 131072
+          }
+        },
+        "github-repositories": {
+          "32768": {
+            "retainedBytes": 153680,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 511605,
+            "retainedTokens": 115432
+          }
+        },
+        "books": {
+          "32768": {
+            "retainedBytes": 154402,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 234972,
+            "retainedTokens": 49012
+          }
+        }
+      }
+    },
+    {
+      "lab": "openai",
+      "label": "OpenAI",
+      "model": "o200k_base",
+      "fidelity": "official tokenizer",
+      "revision": "js-tiktoken o200k_base",
+      "scenarios": {
+        "wikipedia": {
+          "32768": {
+            "retainedBytes": 140676,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 656687,
+            "retainedTokens": 131072
+          }
+        },
+        "github-repositories": {
+          "32768": {
+            "retainedBytes": 126638,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 488301,
+            "retainedTokens": 131072
+          }
+        },
+        "books": {
+          "32768": {
+            "retainedBytes": 135219,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 234972,
+            "retainedTokens": 56241
+          }
+        }
+      }
+    },
+    {
+      "lab": "anthropic",
+      "label": "Anthropic",
+      "model": "Anthropic 2023 legacy proxy",
+      "fidelity": "official legacy proxy",
+      "revision": "58dad83d85e9cd57be209172449ebfbc395df2b455c11fe8b7e5b661e6f462ad",
+      "scenarios": {
+        "wikipedia": {
+          "32768": {
+            "retainedBytes": 84918,
+            "retainedTokens": 32767
+          },
+          "131072": {
+            "retainedBytes": 371421,
+            "retainedTokens": 131072
+          }
+        },
+        "github-repositories": {
+          "32768": {
+            "retainedBytes": 115368,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 469785,
+            "retainedTokens": 131072
+          }
+        },
+        "books": {
+          "32768": {
+            "retainedBytes": 127023,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 234972,
+            "retainedTokens": 59375
+          }
+        }
+      }
+    },
+    {
+      "lab": "google",
+      "label": "Google",
+      "model": "Gemma 4 tokenizer (not Gemini)",
+      "fidelity": "official open-model tokenizer",
+      "revision": "023679ed352de9bb66cc873c9009ce3482585c08",
+      "scenarios": {
+        "wikipedia": {
+          "32768": {
+            "retainedBytes": 147126,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 640815,
+            "retainedTokens": 131072
+          }
+        },
+        "github-repositories": {
+          "32768": {
+            "retainedBytes": 108892,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 444056,
+            "retainedTokens": 131072
+          }
+        },
+        "books": {
+          "32768": {
+            "retainedBytes": 133268,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 234972,
+            "retainedTokens": 57176
+          }
+        }
+      }
+    },
+    {
+      "lab": "kimi",
+      "label": "Kimi",
+      "model": "Kimi K2.6 tokenizer",
+      "fidelity": "official tokenizer",
+      "revision": "81bcaaa7947338ce2641983d98947bca0cc1a4d4",
+      "scenarios": {
+        "wikipedia": {
+          "32768": {
+            "retainedBytes": 100750,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 439033,
+            "retainedTokens": 131072
+          }
+        },
+        "github-repositories": {
+          "32768": {
+            "retainedBytes": 128010,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 489575,
+            "retainedTokens": 131072
+          }
+        },
+        "books": {
+          "32768": {
+            "retainedBytes": 132631,
+            "retainedTokens": 32767
+          },
+          "131072": {
+            "retainedBytes": 234972,
+            "retainedTokens": 57389
+          }
+        }
+      }
+    },
+    {
+      "lab": "deepseek",
+      "label": "DeepSeek",
+      "model": "DeepSeek-V3.2 tokenizer",
+      "fidelity": "official tokenizer",
+      "revision": "c69397e",
+      "scenarios": {
+        "wikipedia": {
+          "32768": {
+            "retainedBytes": 118944,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 556176,
+            "retainedTokens": 131072
+          }
+        },
+        "github-repositories": {
+          "32768": {
+            "retainedBytes": 120412,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 474309,
+            "retainedTokens": 131072
+          }
+        },
+        "books": {
+          "32768": {
+            "retainedBytes": 133385,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 234972,
+            "retainedTokens": 56720
+          }
+        }
+      }
+    },
+    {
+      "lab": "xai",
+      "label": "Grok",
+      "model": "Grok-1 local proxy",
+      "fidelity": "official legacy proxy",
+      "revision": "40ee9ae4aed428f623d105e0d85afbbb7985c4b6",
+      "scenarios": {
+        "wikipedia": {
+          "32768": {
+            "retainedBytes": 87514,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 388328,
+            "retainedTokens": 131072
+          }
+        },
+        "github-repositories": {
+          "32768": {
+            "retainedBytes": 109722,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 442776,
+            "retainedTokens": 131072
+          }
+        },
+        "books": {
+          "32768": {
+            "retainedBytes": 134106,
+            "retainedTokens": 32767
+          },
+          "131072": {
+            "retainedBytes": 234972,
+            "retainedTokens": 56984
+          }
+        }
+      }
+    },
+    {
+      "lab": "meta",
+      "label": "Meta",
+      "model": "Llama 3.1 tokenizer family",
+      "fidelity": "official tokenizer",
+      "revision": "72bff9ee09897a16b3b4b2b9995fecb0bfa7dbe6",
+      "scenarios": {
+        "wikipedia": {
+          "32768": {
+            "retainedBytes": 129136,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 566072,
+            "retainedTokens": 131072
+          }
+        },
+        "github-repositories": {
+          "32768": {
+            "retainedBytes": 128006,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 490777,
+            "retainedTokens": 131072
+          }
+        },
+        "books": {
+          "32768": {
+            "retainedBytes": 134617,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 234972,
+            "retainedTokens": 56510
+          }
+        }
+      }
+    },
+    {
+      "lab": "mistral",
+      "label": "Mistral",
+      "model": "Mistral Small 4 tokenizer",
+      "fidelity": "official tokenizer",
+      "revision": "233ef01d21386af67064b8f3a56d3f477ca52ce8",
+      "scenarios": {
+        "wikipedia": {
+          "32768": {
+            "retainedBytes": 137222,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 616810,
+            "retainedTokens": 131072
+          }
+        },
+        "github-repositories": {
+          "32768": {
+            "retainedBytes": 120505,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 467103,
+            "retainedTokens": 131072
+          }
+        },
+        "books": {
+          "32768": {
+            "retainedBytes": 132776,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 234972,
+            "retainedTokens": 57544
+          }
+        }
+      }
+    },
+    {
+      "lab": "qwen",
+      "label": "Qwen",
+      "model": "Qwen3 tokenizer",
+      "fidelity": "official tokenizer",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "scenarios": {
+        "wikipedia": {
+          "32768": {
+            "retainedBytes": 124381,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 524485,
+            "retainedTokens": 131072
+          }
+        },
+        "github-repositories": {
+          "32768": {
+            "retainedBytes": 125467,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 472321,
+            "retainedTokens": 131072
+          }
+        },
+        "books": {
+          "32768": {
+            "retainedBytes": 134480,
+            "retainedTokens": 32768
+          },
+          "131072": {
+            "retainedBytes": 234972,
+            "retainedTokens": 56917
+          }
+        }
+      }
+    }
+  ]
+}

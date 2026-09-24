@@ -796,6 +796,24 @@ h1 {
   min-width: 1420px;
 }
 
+.context-capacity-table {
+  min-width: 1500px;
+  table-layout: fixed;
+}
+
+.context-capacity-table th:first-child {
+  width: 150px;
+  min-width: 150px;
+}
+
+.context-capacity-table th:nth-child(2) {
+  width: 88px;
+}
+
+.context-scroll-hint {
+  display: none;
+}
+
 .benchmark-table caption {
   padding: 0;
   width: 1px;
@@ -1329,6 +1347,10 @@ h1 {
 }
 
 @media (max-width: 620px) {
+  .context-scroll-hint {
+    display: block;
+    margin-bottom: 8px;
+  }
   .lab-shell {
     padding: 25px 16px 56px;
   }

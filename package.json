@@ -36,6 +36,7 @@
     "tokenizer:benchmark:corpus": "python3 scripts/benchmark_atlas_corpus.py",
     "tokenizer:benchmark:build": "python3 scripts/build_tokenizer_benchmark.py",
     "tokenizer:benchmark:run": "node scripts/run_tokenizer_benchmark.mjs",
+    "tokenizer:benchmark:context": "node scripts/benchmark_context_capacity.mjs",
     "tokenizer:train": "python3 scripts/train_atlas_tokenizer.py"
   },
   "dependencies": {

@@ -12,6 +12,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 import { Textarea } from "@/components/ui/textarea"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import BENCHMARK_REPORT from "@/benchmarks/atlas-corpus-v3.report.json"
+import CONTEXT_CAPACITY_REPORT from "@/benchmarks/context-capacity-v1.report.json"
 import { countBytes, countWords, rankedResults, relativeDifference } from "@/lib/tokenizers/calculations"
 import { manifestByLab, TOKENIZER_MANIFEST, type TokenizerManifestEntry } from "@/lib/tokenizers/manifest"
 import type { LabId, TokenizerResult } from "@/lib/tokenizers/types"
@@ -240,6 +241,8 @@ export function TokenizerWorkbench() {
 
 type BenchmarkSystem = (typeof BENCHMARK_REPORT.systems)[number]
 type BenchmarkTrack = (typeof BENCHMARK_REPORT.corpus.tracks)[number]
+type ContextScenarioId = keyof (typeof CONTEXT_CAPACITY_REPORT.systems)[number]["scenarios"]
+type ContextBudget = "32768" | "131072"
 
 function BenchmarkSuiteView() {
   const systems = BENCHMARK_REPORT.systems as BenchmarkSystem[]
@@ -362,8 +365,56 @@ function BenchmarkSuiteView() {
 
     <Separator className="lab-rule" />
 
+    <section className="benchmark-section" aria-labelledby="context-capacity-title">
+      <div className="section-label"><span>04</span> Context capacity</div>
+      <div className="benchmark-heading">
+        <div>
+          <h2 id="context-capacity-title">Original text retained</h2>
+          <p>At the same raw token budget, how much of each source remains when older text is trimmed? More retained bytes means more text fits. This does not measure model recall.</p>
+        </div>
+        <Badge variant="outline">32K / 128K tokens</Badge>
+      </div>
+      <p className="benchmark-footnote context-scroll-hint">Scroll the table sideways to compare every tokenizer.</p>
+      <div className="benchmark-table-shell" role="region" aria-labelledby="context-capacity-title" tabIndex={0}>
+        <table className="benchmark-table context-capacity-table">
+          <caption>Original UTF-8 bytes retained by each tokenizer at fixed raw token budgets. Higher is more text retained.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Source</th>
+              <th scope="col">Budget</th>
+              {CONTEXT_CAPACITY_REPORT.systems.map((system) => <th scope="col" key={system.lab} data-owner-column={system.lab === "atlas" ? "true" : undefined}><LabMark lab={system.lab as LabId} compact />{benchmarkSystemLabel(system)}</th>)}
+              <th scope="col">Input bytes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {CONTEXT_CAPACITY_REPORT.scenarios.flatMap((scenario) => CONTEXT_CAPACITY_REPORT.budgets.map((budget) => {
+              const id = scenario.id as ContextScenarioId
+              const budgetKey = String(budget) as ContextBudget
+              const retained = CONTEXT_CAPACITY_REPORT.systems.map((system) => system.scenarios[id][budgetKey].retainedBytes)
+              const highest = Math.max(...retained)
+              const hasDifference = retained.some((value) => value !== highest)
+              return <tr key={`${id}-${budget}`}>
+                <th scope="row">{scenario.label}</th>
+                <td>{budget.toLocaleString()}</td>
+                {CONTEXT_CAPACITY_REPORT.systems.map((system, index) => <BenchmarkCell
+                  key={system.lab}
+                  value={retained[index].toLocaleString()}
+                  isBest={hasDifference && retained[index] === highest}
+                  isOwnerColumn={system.lab === "atlas"}
+                />)}
+                <td>{scenario.utf8Bytes.toLocaleString()}</td>
+              </tr>
+            }))}
+          </tbody>
+        </table>
+      </div>
+      <p className="benchmark-footnote">The same three locked sources are used for every tokenizer. Budgets exclude chat templates, system prompts, and output space; some applications reject long input instead of trimming it. The Anthropic and Grok rows use older proxy tokenizers, and Google uses Gemma rather than Gemini.</p>
+    </section>
+
+    <Separator className="lab-rule" />
+
     <section className="benchmark-section" aria-labelledby="toklens-title">
-      <div className="section-label"><span>04</span> TokLens metrics</div>
+      <div className="section-label"><span>05</span> TokLens metrics</div>
       <div className="benchmark-heading"><div><h2 id="toklens-title">Wikipedia, 15 languages</h2><p>Macro averages use the TokLens intrinsic metric definitions and Wikipedia 20231101 recipe. Samples are comparable, not translations.</p></div><Badge variant="outline">15 languages</Badge></div>
       <div className="benchmark-table-shell" role="region" aria-labelledby="toklens-title" tabIndex={0}>
         <table className="benchmark-table suite-benchmark-table">
@@ -388,7 +439,7 @@ function BenchmarkSuiteView() {
     <Separator className="lab-rule" />
 
     <section className="evidence-section" aria-labelledby="evidence-title">
-      <div className="section-label"><span>05</span> Validation scope</div>
+      <div className="section-label"><span>06</span> Validation scope</div>
       <div className="benchmark-heading"><div><h2 id="evidence-title">Methods and external evidence</h2></div></div>
       <div className="evidence-grid">
         <article><span>Executed</span><h3>TokenizerBench 0.2.0</h3><p>All 84 language groups, 17 code groups, 237 math/science cases, and 292 edge cases were encoded from the verified published wheel.</p><a href={BENCHMARK_REPORT.externalEvidence.tokenizerBench.sourceUrl} target="_blank" rel="noreferrer">Pinned source ↗</a></article>
@@ -397,7 +448,7 @@ function BenchmarkSuiteView() {
       </div>
     </section>
 
-    <MeasurementDisclosure sectionNumber="06" benchmarkView />
+    <MeasurementDisclosure sectionNumber="07" benchmarkView />
   </div>
 }
 
@@ -438,7 +489,7 @@ function RankedRuler({ ranked, loading, label }: { ranked: ReturnType<typeof ran
   </div>
 }
 
-function benchmarkSystemLabel(system: BenchmarkSystem) {
+function benchmarkSystemLabel(system: Pick<BenchmarkSystem, "lab" | "label">) {
   return system.lab === "atlas" ? manifestByLab.atlas.shortName : system.label
 }
 
@@ -579,6 +630,7 @@ function MeasurementDisclosure({ sectionNumber, benchmarkView = false }: { secti
       {benchmarkView ? <>
         <p><strong>Corpus:</strong> the checked-in manifest and lock define 2,116 record hashes, revisions, licenses, and the corpus SHA-256. Aggregate counts deduplicate repeated content hashes.</p>
         <p><strong>Compression:</strong> each B/T value divides the joined UTF-8 bytes in a dataset by its raw token count. The same two-newline record separators are included for every tokenizer.</p>
+        <p><strong>Context capacity:</strong> a fixed 32,768- or 131,072-token raw-text budget is applied to three locked sources. The runner measures the original trailing bytes that fit after trimming older text. This is a tokenizer-only capacity test, not a recall test.</p>
         <p><strong>TokenizerBench:</strong> all fixtures are loaded from four data modules in the hash-verified 0.2.0 wheel because its package-level imports are broken.</p>
         <p><strong>TokLens:</strong> the six intrinsic metrics follow the pinned source definitions. Published downstream correlations are external evidence and are not reported as results for Connor’s Tokenizer.</p>
       </> : <>

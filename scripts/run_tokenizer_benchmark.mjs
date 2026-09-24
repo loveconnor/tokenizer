@@ -6,6 +6,7 @@ import os from "node:os"
 import path from "node:path"
 import process from "node:process"
 import { performance } from "node:perf_hooks"
+import { fileURLToPath } from "node:url"
 
 import { AutoTokenizer, env } from "@huggingface/transformers"
 import { Tiktoken } from "js-tiktoken/lite"
@@ -19,7 +20,7 @@ const REPORT_PATH = path.join(ROOT, "benchmarks", "atlas-corpus-v3.report.json")
 const MARKDOWN_PATH = path.join(ROOT, "docs", "atlas-corpus-v3-benchmark.md")
 const JOINER = "\n\n"
 
-const SYSTEMS = [
+export const SYSTEMS = [
   { lab: "atlas", label: "Connor's Tokenizer", model: "Byte-lossless Unigram v3", kind: "atlas", asset: "atlas-unigram-v3", fidelity: "research candidate" },
   { lab: "openai", label: "OpenAI", model: "o200k_base", kind: "openai", fidelity: "official tokenizer" },
   { lab: "anthropic", label: "Anthropic", model: "Anthropic 2023 legacy proxy", kind: "anthropic", asset: "anthropic-legacy", fidelity: "official legacy proxy" },
@@ -131,7 +132,7 @@ class ConnorsTokenizer {
   }
 }
 
-async function loadTokenizer(system) {
+export async function loadTokenizer(system) {
   if (system.kind === "atlas") {
     const artifactPath = path.join(ROOT, "public", "tokenizers", system.asset, "tokenizer.json")
     const artifactPayload = fs.readFileSync(artifactPath)
@@ -475,4 +476,4 @@ async function main() {
   console.log(MARKDOWN_PATH)
 }
 
-await main()
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) await main()
